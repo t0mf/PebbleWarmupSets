@@ -5,17 +5,14 @@
     ],
     "companyName": "thomasfiveash@gmail.com",
     "enableMultiJS": true,
-    "longName": "WarmUp Sets",
+    "longName": "Warmup Sets",
     "projectType": "native",
     "resources": {
         "media": []
     },
     "sdkVersion": "3",
-    "shortName": "WarmUp Sets",
-    "targetPlatforms": [
-        "chalk"
-    ],
-    "uuid": "0b57f177-1d14-4cc8-a7c9-ab89ac4dde34",
+    "shortName": "Warmup Sets",
+    "uuid": "07252031-6c2e-46ef-9cc3-8c7e506cc561",
     "versionLabel": "1.0",
     "watchapp": {
         "watchface": false
