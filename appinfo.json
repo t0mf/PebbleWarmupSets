@@ -1,9 +1,9 @@
 {
     "appKeys": {},
     "capabilities": [
-        ""
+        "configurable"
     ],
-    "companyName": "thomasfiveash@gmail.com",
+    "companyName": "thomasfiveash",
     "enableMultiJS": true,
     "longName": "Warmup Sets",
     "projectType": "native",
@@ -12,7 +12,12 @@
     },
     "sdkVersion": "3",
     "shortName": "Warmup Sets",
-    "uuid": "07252031-6c2e-46ef-9cc3-8c7e506cc561",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "652a77c0-44a0-4eeb-846b-3bb95008a646",
     "versionLabel": "1.0",
     "watchapp": {
         "watchface": false
