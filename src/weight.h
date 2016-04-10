@@ -6,10 +6,9 @@
 static void weight_select_click_handler(ClickRecognizerRef recognize, void *context);
 static void weight_down_click_handler(ClickRecognizerRef recognize, void *context);
 static void weight_up_click_handler(ClickRecognizerRef recognize, void *context);
-static void rep_window_load(Window *window);
-static void rep_window_unload(Window *window);
-void init_rep_window(void);
-Window *s_rep_window;
-char *exercise_string;
+static void weight_window_load(Window *window);
+static void weight_window_unload(Window *window);
+void init_weight_window(void);
+Window *s_weight_window;
 
 #endif

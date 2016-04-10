@@ -1,22 +1,19 @@
 #include "main.h"
 #include "weight.h"
+#include "master.h"
 
 static Window *s_main_window;
 static MenuLayer *s_menu_layer;
 static TextLayer *s_list_message_layer;
 
-char *exercise_strings[] = {"Squat","Bench Press","Deadlift","Pendlay Row","Overhead Press"};
-int s_current_exercise = 0;
+char *exercise_strings[] = {"Squat","Bench Press","Deadlift","Overhead Press","Pendlay Row","Power Cleans"};
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
-  
-  s_current_exercise = cell_index->row;
-  
-  exercise_string = exercise_strings[s_current_exercise];
+  exercise_string = exercise_strings[cell_index->row];
     
-  init_rep_window();
+  init_weight_window();
   
-  window_stack_push(s_rep_window, true);
+  window_stack_push(s_weight_window, true);
 }
 
 static void select_click_handler(ClickRecognizerRef recognize, void *context) {
