@@ -9,38 +9,46 @@
 static TextLayer *s_text_layer;
 static TextLayer *s_text_layer2;
 static TextLayer *s_plus_minus_layer;
+static TextLayer *s_time_layer;
 
 static int s_max_weight = 500;
-char s_buff[10];
+char weight_buff[10];
+
+static void handle_minute_tick(struct tm* tick_time, TimeUnits units_changed) {
+  // Needs to be static because it's used by the system later.
+  static char s_time_text[] = "00:00   ";
+
+  clock_copy_time_string(s_time_text, sizeof(s_time_text));
+  text_layer_set_text(s_time_layer,s_time_text);
+}
 
 static void weight_select_click_handler(ClickRecognizerRef recognize, void *context) {
-  ftoa(s_buff, m_weight_i, 3);
-  text_layer_set_text(s_text_layer2, s_buff);
-  
+  ftoa(weight_buff, m_weight_d, 3);
+  text_layer_set_text(s_text_layer2, weight_buff);
+  persist_write_int(((exercise_int + 3)+(unit_system*7)), m_weight_d);
   init_sets_window();
   window_stack_push(s_sets_window, true);
 }
 
 static void weight_down_click_handler(ClickRecognizerRef recognize, void *context) {
-  if (unit_system == 0) { m_weight_i = m_weight_i - 5; } 
-  else if (unit_system == 1) { m_weight_i = m_weight_i - 2.5; }
-  if (m_weight_i < 0) {
-    m_weight_i = s_max_weight;
+   m_weight_d = m_weight_d - step_size[unit_system];
+  
+  if (m_weight_d < 0) {
+    m_weight_d = s_max_weight;
   }
   
-  ftoa(s_buff, m_weight_i, 3);
-  text_layer_set_text(s_text_layer2, s_buff);
+  ftoa(weight_buff, m_weight_d, 3);
+  text_layer_set_text(s_text_layer2, weight_buff);
 }
 
 static void weight_up_click_handler(ClickRecognizerRef recognize, void *context) {
-  if (unit_system == 0) { m_weight_i = m_weight_i + 5; } 
-  else if (unit_system == 1) { m_weight_i = m_weight_i + 2.5; }
+  m_weight_d = m_weight_d + step_size[unit_system];
 
-  if (m_weight_i > s_max_weight) {
-    m_weight_i = 0;
+  if (m_weight_d > s_max_weight) {
+    m_weight_d = 0;
   }
-  ftoa(s_buff, m_weight_i, 2);
-  text_layer_set_text(s_text_layer2, s_buff);
+  ftoa(weight_buff, m_weight_d, 2);
+  text_layer_set_text(s_text_layer2, weight_buff);
   
 }
 
@@ -63,10 +71,16 @@ static void weight_window_load(Window *window) {
   text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
   
-  ftoa(s_buff, m_weight_i, 3);
+  if (persist_read_int(((exercise_int + 3)+(unit_system*7))))
+  { m_weight_d = persist_read_int(((exercise_int + 3)+(unit_system*7))); } 
+  
+  int tmp = m_weight_d;
+  if (unit_system == 1 && (tmp * 2) % 5 == 4) { m_weight_d += .5; }
+  
+  ftoa(weight_buff, m_weight_d, 3);
   s_text_layer2 = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.size.h/2-20}, .size = { 60, 28 } });
   text_layer_set_text_alignment(s_text_layer2, GTextAlignmentCenter);
-  text_layer_set_text(s_text_layer2, s_buff);
+  text_layer_set_text(s_text_layer2, weight_buff);
   text_layer_set_font(s_text_layer2, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_text_layer2));
   
@@ -76,32 +90,45 @@ static void weight_window_load(Window *window) {
   text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
   
-  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 32, bounds.size.h/2 -45}, .size = { 15, 25 } });
+  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 42, bounds.size.h/2 -45}, .size = { 25, 25 } });
+  
   if (unit_system == 0) { text_layer_set_text(s_plus_minus_layer, "+5"); } 
   else if (unit_system == 1) { text_layer_set_text(s_plus_minus_layer, "+2.5"); }
-  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentRight);
   text_layer_set_font(s_plus_minus_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_plus_minus_layer));
   
-  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 32, bounds.size.h/2 -12}, .size = { 20, 25 } });
+  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 28, bounds.size.h/2 -12}, .size = { 20, 25 } });
   text_layer_set_text(s_plus_minus_layer, "OK");
-  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentRight);
   text_layer_set_font(s_plus_minus_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_plus_minus_layer));
 
-  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 32, bounds.size.h/2 +25}, .size = { 15, 25 } });
+  s_plus_minus_layer = text_layer_create((GRect) {.origin = {bounds.size.w - 42, bounds.size.h/2 +25}, .size = { 25, 25 } });
   if (unit_system == 0) { text_layer_set_text(s_plus_minus_layer, "-5"); } 
   else if (unit_system == 1) { text_layer_set_text(s_plus_minus_layer, "-2.5"); }
-  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(s_plus_minus_layer, GTextAlignmentRight);
   text_layer_set_font(s_plus_minus_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_plus_minus_layer));
   
+  s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
+  text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
+  text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
+  
+  time_t now = time(NULL);
+  struct tm *current_time = localtime(&now);
+  handle_minute_tick(current_time, MINUTE_UNIT);
+  tick_timer_service_subscribe(MINUTE_UNIT, handle_minute_tick);
+  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
 static void weight_window_unload(Window *window) {
   window_destroy(window);
+  text_layer_destroy(s_text_layer);
+  text_layer_destroy(s_text_layer2);
+  text_layer_destroy(s_plus_minus_layer);
+  text_layer_destroy(s_time_layer);
   s_weight_window = NULL;
-  init_weight_window();
 }
 
 void init_weight_window(void) {
