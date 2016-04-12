@@ -3,11 +3,8 @@
 
 #include <pebble.h>
 
-
-#define LIST_MESSAGE_WINDOW_CELL_HEIGHT 30
-#define LIST_MESSAGE_WINDOW_MENU_HEIGHT \
-    5 * LIST_MESSAGE_WINDOW_CELL_HEIGHT
-#define LIST_MESSAGE_WINDOW_HINT_TEXT   "Sets"
+#define N 100
+extern char plates[5][N+1];
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context);
 static void select_click_handler(ClickRecognizerRef recognize, void *context);
@@ -21,7 +18,10 @@ void init_sets_window(void);
 static void deinit(void);
 void calculate_sets(void);
 void calculate_weights(void);
-int findWeight(int num);
+void calculate_sets(void);
+void do_stuff(void);
+double findWeight(double num);
+void calculate_barbell_math(double weight, int i);
 Window *s_sets_window;
-
+  
 #endif

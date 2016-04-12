@@ -3,12 +3,6 @@
 
 #include <pebble.h>
 
-#define LIST_MESSAGE_WINDOW_NUM_ROWS    6
-#define LIST_MESSAGE_WINDOW_CELL_HEIGHT 25
-#define LIST_MESSAGE_WINDOW_MENU_HEIGHT \
-    LIST_MESSAGE_WINDOW_NUM_ROWS * LIST_MESSAGE_WINDOW_CELL_HEIGHT
-#define LIST_MESSAGE_WINDOW_HINT_TEXT   "Select an Exercise"
-
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context);
 static void select_click_handler(ClickRecognizerRef recognize, void *context);
 static void click_config_provider(void *context);

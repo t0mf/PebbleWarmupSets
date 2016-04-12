@@ -8,7 +8,14 @@
     "longName": "Warmup Sets",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/Settings",
+                "name": "settings_graphic",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Warmup Sets",
