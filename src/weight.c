@@ -65,10 +65,10 @@ static void weight_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
   
-  s_text_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-40, 20}, .size = { 80, 60 } });
+  s_text_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-60, 20}, .size = { 120, 60 } });
   text_layer_set_text(s_text_layer, exercise_name_strings[exercise_int]);
   text_layer_set_text_alignment(s_text_layer, GTextAlignmentCenter);
-  text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+  text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
   layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
   
   if (persist_read_int(((exercise_int + 3)+(unit_system*7))))
@@ -123,12 +123,8 @@ static void weight_window_load(Window *window) {
 }
 
 static void weight_window_unload(Window *window) {
-  window_destroy(window);
-  text_layer_destroy(s_text_layer);
-  text_layer_destroy(s_text_layer2);
-  text_layer_destroy(s_plus_minus_layer);
-  text_layer_destroy(s_time_layer);
   s_weight_window = NULL;
+  window_destroy(s_weight_window);
 }
 
 void init_weight_window(void) {

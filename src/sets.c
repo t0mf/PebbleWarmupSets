@@ -106,11 +106,8 @@ static void sets_window_load(Window *window) {
 }
 
 static void sets_window_unload(Window *window) {
-  menu_layer_destroy(s_menu_layer);
-  text_layer_destroy(s_list_message_layer);
-  text_layer_destroy(s_list_message_layer2);
-  text_layer_destroy(s_time_layer);
   s_sets_window = NULL;
+  window_destroy(s_sets_window);
 }
 
 void init_sets_window(void) {
@@ -126,10 +123,6 @@ void init_sets_window(void) {
   calculate_weights();
   do_stuff();
   window_stack_push(s_sets_window, true);  
-}
-
-static void deinit(void){
-    window_destroy(s_sets_window);
 }
 
 void do_stuff(void) {

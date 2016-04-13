@@ -1,21 +1,14 @@
 {
     "appKeys": {},
     "capabilities": [
-        "configurable"
+        ""
     ],
     "companyName": "thomasfiveash",
     "enableMultiJS": true,
     "longName": "Warmup Sets",
     "projectType": "native",
     "resources": {
-        "media": [
-            {
-                "file": "images/Settings",
-                "name": "settings_graphic",
-                "targetPlatforms": null,
-                "type": "bitmap"
-            }
-        ]
+        "media": []
     },
     "sdkVersion": "3",
     "shortName": "Warmup Sets",

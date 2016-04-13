@@ -118,11 +118,8 @@ static void settings_window_load(Window *window) {
 }
 
 static void settings_window_unload(Window *window) {
-  window_destroy(s_settings_window);
-  menu_layer_destroy(settings_menu_layer);
-  text_layer_destroy(settings_list_message_layer);
-  text_layer_destroy(s_time_layer);
   s_settings_window = NULL;
+  window_destroy(s_settings_window);
 }
 
 void init_settings_window(void) {
@@ -134,8 +131,4 @@ void init_settings_window(void) {
         .unload = settings_window_unload,
     });
   }
-}
-
-static void deinit(void){
-    window_destroy(s_settings_window);
 }
