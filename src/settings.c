@@ -10,12 +10,12 @@ static TextLayer *s_time_layer;
 // Initialize exercise names
 char *settings[6] = {"Units", "Bar Weight"};
 
-static void handle_minute_tick(struct tm* tick_time, TimeUnits units_changed) {
-  // Needs to be static because it's used by the system later.
-  static char s_time_text[] = "00:00   ";
-
-  clock_copy_time_string(s_time_text, sizeof(s_time_text));
-  text_layer_set_text(s_time_layer,s_time_text);
+static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
+  if (units_changed & MINUTE_UNIT) {
+      static char s_time_text[] = "00:00   ";
+      clock_copy_time_string(s_time_text, sizeof(s_time_text));
+      text_layer_set_text(s_time_layer,s_time_text);
+  }
 }
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
@@ -107,19 +107,19 @@ static void settings_window_load(Window *window) {
   layer_add_child(window_layer, text_layer_get_layer(settings_list_message_layer));
   
   s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
-  text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14_BOLD));
+  text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
-  time_t now = time(NULL);
-  struct tm *current_time = localtime(&now);
-  handle_minute_tick(current_time, MINUTE_UNIT);
-  tick_timer_service_subscribe(MINUTE_UNIT, handle_minute_tick);
+  static char s_time_text[] = "00:00   ";
+  clock_copy_time_string(s_time_text, sizeof(s_time_text));
+  text_layer_set_text(s_time_layer,s_time_text);
+  tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
 static void settings_window_unload(Window *window) {
-  s_settings_window = NULL;
   window_destroy(s_settings_window);
+  s_settings_window = NULL;
 }
 
 void init_settings_window(void) {
