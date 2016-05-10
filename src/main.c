@@ -103,7 +103,7 @@ static void window_load(Window *window) {
   text_layer_set_text(s_list_message_layer, "Select an Exercise");
   layer_add_child(window_layer, text_layer_get_layer(s_list_message_layer));
   
-  s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
+  s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
@@ -150,15 +150,11 @@ int main() {
     bar_type = 0;
   }
   
+  m_weight_d = barbell_weights[bar_type][unit_system];
+  
   // Initialize kg or lbs
-  if (unit_system == 0) {
-    unit_type = " lbs";
-    m_weight_d = 45;
-  } else if (unit_system == 1) {
-    unit_type = " kgs";
-    m_weight_d = 20;
-  }
-  APP_LOG(APP_LOG_LEVEL_DEBUG, "OOPS");
+  if (unit_system == 0) { unit_type = " lbs"; } 
+  else if (unit_system == 1) { unit_type = " kgs"; }
   init();
 
   app_event_loop();

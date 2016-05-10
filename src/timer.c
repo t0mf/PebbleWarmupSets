@@ -5,6 +5,13 @@
 static TextLayer *s_text_layer;
 static TextLayer *s_time_layer;
 static AppTimer *s_timer;
+static GBitmap *s_res_15_plus_button;
+static GBitmap *s_res_play_button;
+static GBitmap *s_res_15_minus_button;
+static GBitmap *s_res_pause_button;
+static GBitmap *s_res_reset_button;
+static GBitmap *s_res_play_reset_button;
+static ActionBarLayer *s_actionbarlayer_1;
 int hours = 0;
 int minutes = 3;
 int seconds = 30;
@@ -30,15 +37,18 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 
     if ( seconds < 0 ) { seconds = 59; minutes -= 1; }
     if ( minutes < 0 && hours != 0) { minutes = 59; hours -= 1; }
-
+    else if ( minutes < 0 && hours <= 0 ) { hours = 0; minutes = 0; seconds = 0; }
 
     snprintf(timer_buff, sizeof(timer_buff), "%02d:%02d:%02d", hours, minutes, seconds);
     text_layer_set_text(s_text_layer, timer_buff);
 
-    if ( hours == 0 && minutes == 0 && seconds == 0 ) {
+    if ( hours <= 0 && minutes <= 0 && seconds <= 0 ) {
       timer_finished_state = true;
       timer_running_state = false;
-      text_layer_set_text(s_text_layer, "Timer finished!");
+      text_layer_set_text(s_text_layer, "Timer Up!");
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, NULL);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_reset_button);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, NULL);
     }
   } else if (timer_finished_state == true && timer_running_state == false) {
     VibePattern pattern = {
@@ -54,20 +64,35 @@ static void timer_select_click_handler(ClickRecognizerRef recognize, void *conte
     timer_begin_state = false; // No longer being in the begin state
     timer_edit_state = false; // No longer allow to edit
     timer_running_state = true; // Now in running state
+    
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, NULL);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_pause_button);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, NULL);
+    
   } else {
     if (timer_running_state == true) { // If timer is running, pause
       timer_running_state = false;
       timer_edit_state = true;
-      text_layer_set_text(s_text_layer,"Paused");
+      
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, s_res_15_plus_button);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_play_reset_button);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, s_res_15_minus_button);
     } else { // Else if paused, restart start timer
       timer_running_state = true;
       timer_edit_state = false;
+      
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, NULL);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_pause_button);
+      action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, NULL);
     }
   }
   if (timer_finished_state == true) { // If timer is finished (alarm going off), reset
     hours = 0; minutes = 3; seconds = 30;
     snprintf(timer_buff, sizeof(timer_buff), "%02d:%02d:%02d", hours, minutes, seconds);
     text_layer_set_text(s_text_layer, timer_buff);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, s_res_15_plus_button);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_play_reset_button);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, s_res_15_minus_button);
     timer_begin_state = true;
     timer_edit_state = true;
     timer_running_state = false;
@@ -103,8 +128,7 @@ static void check_time(void) {
 
 
 static void long_timer_select_click_handler (ClickRecognizerRef recognize, void *context) {
-  if (timer_begin_state == true && timer_running_state == false && timer_edit_state == true) {
-      ////////////////
+  if (timer_edit_state == true) {
       hours = 0; minutes = 3; seconds = 30;
       snprintf(timer_buff, sizeof(timer_buff), "%02d:%02d:%02d", hours, minutes, seconds);
       text_layer_set_text(s_text_layer, timer_buff);
@@ -128,7 +152,7 @@ static void timer_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
 
-  s_text_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-100, bounds.size.h/2-20}, .size = { 200, 28 } });
+  s_text_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-42, bounds.size.h/2-18}, .size = { 85, 30 } });
   
 
   snprintf(timer_buff, sizeof(timer_buff), "%02d:%02d:%02d", hours, minutes, seconds);
@@ -137,7 +161,7 @@ static void timer_window_load(Window *window) {
   text_layer_set_text_alignment(s_text_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
   
-  s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
+  s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
@@ -149,15 +173,43 @@ static void timer_window_load(Window *window) {
 }
 
 static void timer_window_unload(Window *window) {
+  window_stack_remove(s_timer_window,true);
   window_destroy(s_timer_window);
+  
+  timer_running_state = false;
+  timer_edit_state = true;
+      
+  action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, s_res_15_plus_button);
+  action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_play_reset_button);
+  action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, s_res_15_minus_button);
   s_timer_window = NULL;
 }
 
 void init_timer_window(void) {
   s_timer_window = window_create();
+  
+  #ifndef PBL_SDK_3
+      window_set_fullscreen(s_timer_window, true);
+  #endif
+    s_res_15_plus_button = gbitmap_create_with_resource(RESOURCE_ID_15_plus_button);
+    s_res_play_button = gbitmap_create_with_resource(RESOURCE_ID_play_button);
+    s_res_15_minus_button = gbitmap_create_with_resource(RESOURCE_ID_15_minus_button);
+    s_res_pause_button = gbitmap_create_with_resource(RESOURCE_ID_pause_button);
+    s_res_reset_button = gbitmap_create_with_resource(RESOURCE_ID_reset_button);
+    s_res_play_reset_button = gbitmap_create_with_resource(RESOURCE_ID_play_reset_button);
+    
+    // s_actionbarlayer_1
+    s_actionbarlayer_1 = action_bar_layer_create();
+    action_bar_layer_add_to_window(s_actionbarlayer_1, s_timer_window);
+    action_bar_layer_set_background_color(s_actionbarlayer_1, GColorBlack);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_UP, s_res_15_plus_button);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_SELECT, s_res_play_reset_button);
+    action_bar_layer_set_icon(s_actionbarlayer_1, BUTTON_ID_DOWN, s_res_15_minus_button);
+    layer_add_child(window_get_root_layer(s_timer_window), (Layer *)s_actionbarlayer_1);
+  
   window_set_click_config_provider(s_timer_window, timer_click_config_provider);
   window_set_window_handlers(s_timer_window, (WindowHandlers) {
     .load = timer_window_load,
-    .disappear = timer_window_unload,  
+    .disappear = timer_window_unload, 
   });
 }

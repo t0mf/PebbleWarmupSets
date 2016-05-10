@@ -8,7 +8,104 @@
     "longName": "Warmup Sets",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/play_reset_button.png",
+                "name": "play_reset_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/reset_button.png",
+                "name": "reset_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/pause_button.png",
+                "name": "pause_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/15_minus_button.png",
+                "name": "15_minus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/15_plus_button.png",
+                "name": "15_plus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/25_minus_button.png",
+                "name": "25_minus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/25_plus_button.png",
+                "name": "25_plus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/5_minus_button.png",
+                "name": "5_minus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/5_plus_button.png",
+                "name": "5_plus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/minus_button.png",
+                "name": "minus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/plus_button.png",
+                "name": "plus_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/check_mark_button.png",
+                "name": "check_mark_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/up_arrow_button.png",
+                "name": "up_arrow_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/down_arrow_button.png",
+                "name": "down_arrow_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/play_button.png",
+                "name": "play_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/arrow_button.png",
+                "name": "arrow_button",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "Warmup Sets",

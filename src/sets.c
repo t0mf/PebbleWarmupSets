@@ -15,7 +15,7 @@ char *sets[] = {"2x5 ","1x5 ","1x3 ","1x2 ","3x5 "};
 double weights[] = {123.00, 123.00, 123.00, 123.00, 123.00};
 char plates[5][N+1];
 
-char sets_buff[10];
+char sets_buff[15];
 int head = 0, ret;
 
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
@@ -46,7 +46,7 @@ static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_in
 static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex *cell_index, void *context) {
   if (strcmp(exercise_name_strings[exercise_int],"Deadlift") == 0 && cell_index->row == 4) { }
   else {
-    static char s_buff4[16];
+    static char s_buff4[20];
     static char s_buff5[20];
     ftoa(sets_buff, weights[cell_index->row], 5);
     snprintf(s_buff4, sizeof(s_buff4), "%s %s %s", sets[cell_index->row], sets_buff, unit_type);
@@ -81,7 +81,11 @@ static void sets_window_load(Window *window) {
   const GEdgeInsets message_insets = {.top = 137};
   s_list_message_layer = text_layer_create(grect_inset(bounds, message_insets));
   text_layer_set_text_alignment(s_list_message_layer, GTextAlignmentCenter);
-  text_layer_set_text(s_list_message_layer, exercise_name_strings[exercise_int]);
+  if (exercise_int == 6) {
+    text_layer_set_text(s_list_message_layer, "Plate Math");
+  } else {
+    text_layer_set_text(s_list_message_layer, exercise_name_strings[exercise_int]);
+  }
   layer_add_child(window_layer, text_layer_get_layer(s_list_message_layer));
   
   static char s_buff4[16];
@@ -93,7 +97,7 @@ static void sets_window_load(Window *window) {
   text_layer_set_text(s_list_message_layer2,s_buff4);
   layer_add_child(window_layer, text_layer_get_layer(s_list_message_layer2));
   
-  s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
+  s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
@@ -126,14 +130,14 @@ void init_sets_window(void) {
 }
 
 void do_stuff(void) {
-    for (int i = 0; i < 5; i++) {
-      calculate_barbell_math(weights[i], i);
-    }
+  for (int i = 0; i < 5; i++) {
+    calculate_barbell_math(weights[i], i);
+  }
 }
 
 void calculate_sets(void) {
   for (int i = 0; i < 5; i++) {
-    sets[i] = exercise_set_strings[exercise_int][i];
+    sets[i] = exercise_set_strings[exercise_int][i]; 
   }
 }
 
@@ -160,7 +164,8 @@ double findWeight(double num) {
       num /= 2.5;
       num = floor(num);
       num *= 2.5;
-      if (num < barbell_weights[bar_type][unit_system]) return barbell_weights[bar_type][unit_system];
+      if (num < barbell_weights[bar_type][unit_system])
+        return barbell_weights[bar_type][unit_system];
       return num;
   }
   return -1;
@@ -204,8 +209,6 @@ void calculate_barbell_math(double weight, int i) {
       weight -= plate_weights[0][unit_system];
     }  
   }
-
-  APP_LOG(APP_LOG_LEVEL_DEBUG, "%d %d %d %d %d %d", weight_45, weight_35, weight_25, weight_10, weight_5, weight_2half);
   
   head = 0;
   
@@ -216,13 +219,12 @@ void calculate_barbell_math(double weight, int i) {
   if (weight_5 != 0) { concatPlates(weight_5, i, plate_weights[4][unit_system]); }
   if (weight_2half != 0) { concatPlates(weight_2half, i, plate_weights[5][unit_system]); }
   
-   //APP_LOG(APP_LOG_LEVEL_DEBUG, "%s", plates[i]);
 }
 
 void concatPlates(int plateNumber, int i, double plateWeights) {
   ftoa(sets_buff, plateWeights, 5);
     if (plateNumber > 1) {
-      ret = snprintf(plates[i] + head, 10, "%s %d %s %s", " ", plateNumber, "x", sets_buff);
+      ret = snprintf(plates[i] + head, 10, " %dx%s" , plateNumber, sets_buff);
       head += ret;
     } else {
       ret = snprintf(plates[i] + head, 6, " %s", sets_buff);

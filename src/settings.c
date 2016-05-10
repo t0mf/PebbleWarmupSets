@@ -90,7 +90,7 @@ static void settings_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  settings_menu_layer = menu_layer_create(GRect(bounds.origin.x, bounds.origin.y+10, bounds.size.w, 140));
+  settings_menu_layer = menu_layer_create(GRect(bounds.origin.x, bounds.origin.y+25, bounds.size.w, 140));
   menu_layer_set_click_config_onto_window(settings_menu_layer, window);
   menu_layer_set_callbacks(settings_menu_layer, NULL, (MenuLayerCallbacks) {
       .get_num_rows = get_num_rows_callback,
@@ -106,7 +106,7 @@ static void settings_window_load(Window *window) {
   text_layer_set_text(settings_list_message_layer, "Settings");
   layer_add_child(window_layer, text_layer_get_layer(settings_list_message_layer));
   
-  s_time_layer = text_layer_create(GRect(bounds.origin.x, bounds.origin.y, bounds.size.w, 20));
+  s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
