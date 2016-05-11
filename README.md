@@ -20,6 +20,7 @@ Here's an overview of everything the Warmup Sets does:
 * Calculates your warmup sets for a specific exercise
 * Calculates barbell plate math for each set
 * Supports both Imperial and Metric
+* Allows you to change barbell weight (45, 35, 25 lbs for Imperial and 20, 15, 10 kgs for Metric)
 * Displays the current time at the top of all of the Windows.
 * Remembers settings and each exercise weight (in both unit systems)
 * Timer for timing your rests in between each set (simply hit the select button from anywhere on the sets menu).
