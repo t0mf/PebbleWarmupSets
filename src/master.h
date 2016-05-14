@@ -8,6 +8,7 @@ extern char *exercise_set_strings[6][5];
 extern double exercise_multipliers[6][5];
 int exercise_int;
 double m_weight_d;
+double bar_weight;
 
 // Metric vs Imperial
 int unit_system;

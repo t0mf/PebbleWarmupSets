@@ -10,6 +10,7 @@ static TextLayer *s_time_layer;
 
 // Initialize exercise names
 char *exercise_name_strings[6] = {"Squat", "Bench Press","Deadlift","Overhead Press","Pendlay Row","Power Cleans"};
+// Initialize sets
 char *exercise_set_strings[6][5] = { 
     {"2x5","1x5","1x3","1x2","3x5"}, // Squat
     {"2x5","1x5","1x3","1x2","3x5"}, // Bench Press
@@ -18,7 +19,7 @@ char *exercise_set_strings[6][5] = {
     {"2x5","1x5","1x3","1x2","3x5"}, // Pendlay Rows
     {"2x5","1x5","1x3","1x2","5x3"}  // Power Cleans
   };
-
+// Initialize multipliers
 double exercise_multipliers[6][5] = {
   {0.0,0.4,0.6,0.8,1.0},  // Squat
   {0.0,0.5,0.7,0.9,1.0},  // Bench Press
@@ -27,28 +28,29 @@ double exercise_multipliers[6][5] = {
   {0.0,0.5,0.7,0.9,1.0},  // Pendlay Rows
   {0.0,0.55,0.7,0.85,1.0} // Power Cleans
 };
+// Initialize plate weights for imperial and metric
+double plate_weights[6][2] = { {45,20.00}, {35,15.00}, {25,10.00}, {10,5.00}, {5,2.50}, {2.5,1.25} };
+// Initialize step size weights for imperial and metric
+double step_size[2] = {5, 2.5};
+// Initialize barbell weights for imperial and metric
+int bar_type = 0; //0 for 45, 1 for 35, 2 for 25
+int barbell_weights[3][2] = { {45,20}, {35,15}, {25, 10} };
 
-  // Initialize plate weights for imperial and metric
-  double plate_weights[6][2] = { {45,20.00}, {35,15.00}, {25,10.00}, {10,5.00}, {5,2.50}, {2.5,1.25} };
-  // Initialize step size weights for imperial and metric
-  double step_size[2] = {5, 2.5};
-  // Initialize barbell weights for imperial and metric
-  int bar_type = 0; //0 for 45, 1 for 35, 2 for 25
-  int barbell_weights[3][2] = { {45,20}, {35,15}, {25, 10} };
+static char s_time_text[] = "00:00   ";
 
+// Method handles changing the clock every minute
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
-  if (units_changed & MINUTE_UNIT) {
-      static char s_time_text[] = "00:00   ";
+  if (units_changed & MINUTE_UNIT) { // Update the time every minute
       clock_copy_time_string(s_time_text, sizeof(s_time_text));
       text_layer_set_text(s_time_layer,s_time_text);
   }
 }
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
-  if (cell_index->row == 6) {
+  if (cell_index->row == 6) { // If Settings selected go to settings window
     init_settings_window();
     window_stack_push(s_settings_window, true);
-  } else {
+  } else { // Otherwise set exercise_int to row and go to the weight window
     exercise_int = cell_index->row;  
     init_weight_window();
     window_stack_push(s_weight_window, true);
@@ -68,6 +70,7 @@ static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_in
 }
 
 static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex *cell_index, void *context) {
+  // Draw the rows
   static char s_buff[16];
   if (cell_index->row == 6) { menu_cell_basic_draw(ctx, cell_layer, "Settings", NULL, NULL); }
   else {
@@ -84,9 +87,11 @@ static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex 
 }
 
 static void window_load(Window *window) {
+  // Initialize the window
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
-
+  
+  // Create the menu
   s_menu_layer = menu_layer_create(GRect(bounds.origin.x, bounds.origin.y+20, bounds.size.w, 140));
   menu_layer_set_click_config_onto_window(s_menu_layer, window);
   menu_layer_set_callbacks(s_menu_layer, NULL, (MenuLayerCallbacks) {
@@ -97,21 +102,25 @@ static void window_load(Window *window) {
   });
   layer_add_child(window_layer, menu_layer_get_layer(s_menu_layer));
   
+  // Create a "Select an Exercise" text layer
   const GEdgeInsets message_insets = {.top = 140};
   s_list_message_layer = text_layer_create(grect_inset(bounds, message_insets));
   text_layer_set_text_alignment(s_list_message_layer, GTextAlignmentCenter);
   text_layer_set_text(s_list_message_layer, "Select an Exercise");
   layer_add_child(window_layer, text_layer_get_layer(s_list_message_layer));
   
+  // Create the time text layer up top
   s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
-  static char s_time_text[] = "00:00   ";
+  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
+}
+
+static void window_appear(Window *window) {
   clock_copy_time_string(s_time_text, sizeof(s_time_text));
   text_layer_set_text(s_time_layer,s_time_text);
   tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
-  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
 static void window_unload(Window *window) {
@@ -126,6 +135,7 @@ static void init(void) {
     window_set_click_config_provider(s_main_window, click_config_provider);
     window_set_window_handlers(s_main_window, (WindowHandlers) {
         .load = window_load,
+        .appear = window_appear,
         .unload = window_unload,
     });
   }
@@ -144,17 +154,20 @@ int main() {
   } else {
     unit_system = 0;
   }
+  // Initialize bar type
   if (persist_exists(1)) {
     bar_type = persist_read_int(1);
   } else {
     bar_type = 0;
   }
   
-  m_weight_d = barbell_weights[bar_type][unit_system];
+  // Initialize barbell weight
+   m_weight_d = bar_weight = barbell_weights[bar_type][unit_system]; 
   
   // Initialize kg or lbs
   if (unit_system == 0) { unit_type = " lbs"; } 
   else if (unit_system == 1) { unit_type = " kgs"; }
+  
   init();
 
   app_event_loop();

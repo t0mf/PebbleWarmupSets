@@ -18,9 +18,11 @@ char plates[5][N+1];
 char sets_buff[15];
 int head = 0, ret;
 
+static char s_time_text[] = "00:00   ";
+
+// Method handles changing the clock every minute
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
   if (units_changed & MINUTE_UNIT) {
-      static char s_time_text[] = "00:00   ";
       clock_copy_time_string(s_time_text, sizeof(s_time_text));
       text_layer_set_text(s_time_layer,s_time_text);
   }
@@ -29,14 +31,6 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
   init_timer_window();
   window_stack_push(s_timer_window, true);
-}
-
-static void select_click_handler(ClickRecognizerRef recognize, void *context) {
-  
-}
-
-static void click_config_provider(void *context) {
-  window_single_click_subscribe(BUTTON_ID_SELECT, select_click_handler);
 }
 
 static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
@@ -101,12 +95,14 @@ static void sets_window_load(Window *window) {
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
-  static char s_time_text[] = "00:00   ";
+  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
+  
+}
+
+static void sets_window_appear(Window *window) {
   clock_copy_time_string(s_time_text, sizeof(s_time_text));
   text_layer_set_text(s_time_layer,s_time_text);
   tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
-  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
-  
 }
 
 static void sets_window_unload(Window *window) {
@@ -117,9 +113,9 @@ static void sets_window_unload(Window *window) {
 void init_sets_window(void) {
   if(!s_sets_window) {
     s_sets_window = window_create();
-    window_set_click_config_provider(s_sets_window, click_config_provider);
     window_set_window_handlers(s_sets_window, (WindowHandlers) {
         .load = sets_window_load,
+        .appear = sets_window_appear,
         .unload = sets_window_unload,
     });
   }

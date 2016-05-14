@@ -7,12 +7,13 @@ static MenuLayer *settings_menu_layer;
 static TextLayer *settings_list_message_layer;
 static TextLayer *s_time_layer;
 
-// Initialize exercise names
+static char s_time_text[] = "00:00   ";
+
+// Initialize menu items
 char *settings[6] = {"Units", "Bar Weight"};
 
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
-  if (units_changed & MINUTE_UNIT) {
-      static char s_time_text[] = "00:00   ";
+  if (units_changed & MINUTE_UNIT) { // Update the time every minute
       clock_copy_time_string(s_time_text, sizeof(s_time_text));
       text_layer_set_text(s_time_layer,s_time_text);
   }
@@ -21,34 +22,19 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
   static char s_buff[16];
   snprintf(s_buff, sizeof(s_buff), "%s", settings[cell_index->row]);
-  if (cell_index->row == 0) {
-    if (unit_system == 1) {
-      unit_system = 0;
-      unit_type = " lbs";
-      m_weight_d = barbell_weights[bar_type][unit_system]; 
-    }
-    else { unit_system = 1;
-      unit_type = " kgs";
-      m_weight_d = barbell_weights[bar_type][unit_system]; 
-
-    }
-  } else if (cell_index->row == 1) {
-    if (bar_type == 0) {
-      bar_type = 1;
-      m_weight_d = barbell_weights[bar_type][unit_system];
-        
-    }
-    else if (bar_type == 1) {
-      bar_type = 2;
-      m_weight_d = barbell_weights[bar_type][unit_system];
+  if (cell_index->row == 0) { // Cycle through kgs or lbs
     
-    }
-    else if (bar_type == 2) { 
-      bar_type = 0; 
-      m_weight_d = barbell_weights[bar_type][unit_system];
+    if (unit_system == 1) { unit_system = 0; unit_type = " lbs"; }
+    else { unit_system = 1; unit_type = " kgs"; }
     
-    }
+  } else if (cell_index->row == 1) { // Cycle through bar weight options
+    
+    if (bar_type == 0) { bar_type = 1; }
+    else if (bar_type == 1) { bar_type = 2; }
+    else if (bar_type == 2) { bar_type = 0; }
+    
   }
+  m_weight_d = bar_weight = barbell_weights[bar_type][unit_system];
   persist_write_int(0, unit_system);
   persist_write_int(1, bar_type);
   menu_layer_reload_data(settings_menu_layer);
@@ -87,9 +73,11 @@ static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex 
 }
 
 static void settings_window_load(Window *window) {
+  // Initialize the settings window
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
+  // Create the menu layer
   settings_menu_layer = menu_layer_create(GRect(bounds.origin.x, bounds.origin.y+25, bounds.size.w, 140));
   menu_layer_set_click_config_onto_window(settings_menu_layer, window);
   menu_layer_set_callbacks(settings_menu_layer, NULL, (MenuLayerCallbacks) {
@@ -100,21 +88,25 @@ static void settings_window_load(Window *window) {
   });
   layer_add_child(window_layer, menu_layer_get_layer(settings_menu_layer));
   
+  // Create a "Settings" text layer
   const GEdgeInsets message_insets = {.top = 140};
   settings_list_message_layer = text_layer_create(grect_inset(bounds, message_insets));
   text_layer_set_text_alignment(settings_list_message_layer, GTextAlignmentCenter);
   text_layer_set_text(settings_list_message_layer, "Settings");
   layer_add_child(window_layer, text_layer_get_layer(settings_list_message_layer));
   
+  // Create a "time" text layer
   s_time_layer = text_layer_create((GRect) {.origin = {bounds.size.w/2-30, bounds.origin.y+5}, .size = { 60, 15 } });
   text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_time_layer, GTextAlignmentCenter);
   
-  static char s_time_text[] = "00:00   ";
+  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
+}
+
+static void settings_window_appear(Window *window) {
   clock_copy_time_string(s_time_text, sizeof(s_time_text));
   text_layer_set_text(s_time_layer,s_time_text);
   tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
-  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
 static void settings_window_unload(Window *window) {
@@ -128,6 +120,7 @@ void init_settings_window(void) {
     window_set_click_config_provider(s_settings_window, click_config_provider);
     window_set_window_handlers(s_settings_window, (WindowHandlers) {
         .load = settings_window_load,
+        .appear = settings_window_appear,
         .unload = settings_window_unload,
     });
   }

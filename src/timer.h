@@ -10,6 +10,7 @@ void timer_callback(void);
 static void timer_select_click_handler(ClickRecognizerRef recognize, void *context);
 static void timer_down_click_handler(ClickRecognizerRef recognize, void *context);
 static void timer_up_click_handler(ClickRecognizerRef recognize, void *context);
+void stop_timer(void);
 static void check_time(void);
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed);
 static void timer_click_config_provider(void *context);
