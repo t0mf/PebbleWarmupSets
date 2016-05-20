@@ -1,5 +1,7 @@
 Warmup Sets is the watch app to have while you're in the gym! The goal is to help you determine the sets you should do for your warmup while also providing you with handy barbell plate math and other nifty features!
 
+Link to the app on the Pebble store: https://apps.getpebble.com/en_US/application/573273836dfc301c9d000002
+
 Warmup Sets automatically calculates the warmup sets for the following exercises*:
 * Squat
  * The calculated sets are: 2x5 at the bar, 1x5 at 40%, 1x3 at 60%, 1x2 at 80%, and 3x5 at 100%
