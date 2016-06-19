@@ -31,7 +31,7 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 static void weight_select_click_handler(ClickRecognizerRef recognize, void *context) {
   ftoa(weight_buff, m_weight_d, 3);
   text_layer_set_text(s_text_layer2, weight_buff);
-  persist_write_int(((exercise_int + 3)+(unit_system*7)), m_weight_d);
+  persist_write_int(((exercise_int + 3)+(unit_system*7)), m_weight_d*10);
   init_sets_window();
   window_stack_push(s_sets_window, true);
 }
@@ -89,11 +89,11 @@ static void weight_window_load(Window *window) {
 
   // Get exercise weight
   if (persist_read_int(((exercise_int + 3)+(unit_system*7))))
-  { m_weight_d = persist_read_int(((exercise_int + 3)+(unit_system*7))); } 
+  { m_weight_d = persist_read_int(((exercise_int + 3)+(unit_system*7)))/10.0; } 
    
   // If it's metric and isn't divisible by 5 add 0.5 - persistant storage can't store floats
   int tmp = m_weight_d;
-  if (unit_system == 1 && (tmp * 2) % 5 == 4) { m_weight_d += .5; }
+  //if (unit_system == 1 && (tmp * 2) % 5 == 4) { m_weight_d += .5; }
   
   // Float to a char and add ".0" if metric
   ftoa(weight_buff, m_weight_d, 3);
