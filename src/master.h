@@ -15,7 +15,6 @@ int unit_system;
 char *unit_type;
 extern double step_size[2];
 extern double plate_weights[6][2];
-int bar_type;
-extern int barbell_weights[3][2];
+extern int barbell_weights[2];
 
 #endif

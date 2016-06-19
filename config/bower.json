@@ -1,0 +1,20 @@
+{
+  "name": "config",
+  "homepage": "https://github.com/thomasfiveash/PebbleWarmupSets",
+  "authors": [
+    "Tom Fiveash <thomasfiveash@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Slate": "pebble-slate#^0.0.3"
+  }
+}

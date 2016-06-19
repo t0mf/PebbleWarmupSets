@@ -1,0 +1,175 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk"
+    ], 
+    "projectType": "native", 
+    "uuid": "652a77c0-44a0-4eeb-846b-3bb95008a646", 
+    "messageKeys": {
+        "barWeight": 2000, 
+        "unitSystem": 1000, 
+        "cleanFour": 25000, 
+        "deadThree": 13000, 
+        "cleanTwo": 23000, 
+        "benchOne": 7000, 
+        "rowThree": 20000, 
+        "pressOne": 14000, 
+        "squatTwo": 4000, 
+        "cleanOne": 22000, 
+        "deadOne": 11000, 
+        "benchTwo": 8000, 
+        "squatFour": 6000, 
+        "cleanThree": 24000, 
+        "rowTwo": 19000, 
+        "rowFour": 21000, 
+        "deadTwo": 12000, 
+        "pressFour": 17000, 
+        "benchFour": 10000, 
+        "squatThree": 5000, 
+        "pressTwo": 15000, 
+        "rowOne": 18000, 
+        "squatOne": 3000, 
+        "pressThree": 16000, 
+        "benchThree": 9000
+    }, 
+    "companyName": "thomasfiveash", 
+    "enableMultiJS": true, 
+    "versionLabel": "2.0", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {
+        "barWeight": 2000, 
+        "unitSystem": 1000, 
+        "cleanFour": 25000, 
+        "deadThree": 13000, 
+        "cleanTwo": 23000, 
+        "benchOne": 7000, 
+        "rowThree": 20000, 
+        "pressOne": 14000, 
+        "squatTwo": 4000, 
+        "cleanOne": 22000, 
+        "deadOne": 11000, 
+        "benchTwo": 8000, 
+        "squatFour": 6000, 
+        "cleanThree": 24000, 
+        "rowTwo": 19000, 
+        "rowFour": 21000, 
+        "deadTwo": 12000, 
+        "pressFour": 17000, 
+        "benchFour": 10000, 
+        "squatThree": 5000, 
+        "pressTwo": 15000, 
+        "rowOne": 18000, 
+        "squatOne": 3000, 
+        "pressThree": 16000, 
+        "benchThree": 9000
+    }, 
+    "longName": "Warmup Sets", 
+    "shortName": "Warmup Sets", 
+    "watchapp": {
+        "watchface": false
+    }, 
+    "resources": {
+        "media": [
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "play_reset_button", 
+                "file": "images/play_reset_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "reset_button", 
+                "file": "images/reset_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "pause_button", 
+                "file": "images/pause_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "15_minus_button", 
+                "file": "images/15_minus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "15_plus_button", 
+                "file": "images/15_plus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "25_minus_button", 
+                "file": "images/25_minus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "25_plus_button", 
+                "file": "images/25_plus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "5_minus_button", 
+                "file": "images/5_minus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "5_plus_button", 
+                "file": "images/5_plus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "minus_button", 
+                "file": "images/minus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "plus_button", 
+                "file": "images/plus_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "check_mark_button", 
+                "file": "images/check_mark_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "up_arrow_button", 
+                "file": "images/up_arrow_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "down_arrow_button", 
+                "file": "images/down_arrow_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "play_button", 
+                "file": "images/play_button.png"
+            }, 
+            {
+                "targetPlatforms": null, 
+                "type": "bitmap", 
+                "name": "arrow_button", 
+                "file": "images/arrow_button.png"
+            }
+        ]
+    }
+}

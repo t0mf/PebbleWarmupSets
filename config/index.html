@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Warmup Sets Config</title>
+	<link rel='stylesheet' type='text/css' href='bower_components/Slate/dist/css/slate.min.css'>
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+	<div class='item-container'>
+		<h1 class='title'>Pebble Warmup Sets Config</h1>
+	</div>
+	
+	<div class="item-container">
+  		<div class="item-container-header">Unit Type</div>
+	  	<div class="item-container-content">
+	    	<div class="item tab-buttons">
+	      	<a id="unit-tab" name="unit-tab" class="tab-button active">Pounds</a>
+	      	<a id="unit-tab" name="unit-tab" class="tab-button">Kilograms</a>
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="item-container">
+	  <div class="item-container-header">Barbell Weight</div>
+	  <div class="item-container-content">
+	    <label class="item">
+	      <div class="item-input-wrapper">
+	        <input id="barbell-weight" min="0" max="500" step="5" type="number" class="item-input" name="barbell-weight-input" placeholder="Enter the barbell weight in lbs or kgs">
+	      </div>
+	    </label>
+	  </div>
+	</div>
+
+	<div class="item-container">
+	  <div class="item-container-header">Exercise Multipliers</div>
+	  <div class="item-container-content">
+	    <label class="item">
+	      Edit Exercise Multipliers
+	      <input id="multbox" type="checkbox" class="item-toggle" name="toggle-box">
+	    </label>
+
+	    <div id="mult" class="item-container-content">
+			<label class="item">
+		          Select Exercise
+		          <select id="select-1" name="select-1" dir='rtl' class="item-select">
+		            <option class="item-select-option" selected>Squat</option>
+		            <option class="item-select-option">Bench Press</option>
+		            <option class="item-select-option">Deadlift</option>
+		            <option class="item-select-option">Overhead Press</option>
+		            <option class="item-select-option">Pendlay Row</option>
+		            <option class="item-select-option">Power Clean</option>
+		          </select>
+		    	<label id="text1" class="item">
+			      <small>Squat Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-squat1" value=0.0>
+			      </div>
+			      <small>Squat Warmup Set 2 (1x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-squat2" value=0.4>
+			      </div>
+			      <small>Squat Warmup Set 3 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-squat3" value=0.6>
+			      </div>
+			      <small>Squat Warmup Set 4 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-squat4" value=0.8>
+			      </div>
+			    </label>
+
+			    <label id="text2" class="item">
+			      <small>Bench Press Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-bench1" value=0.0>
+			      </div>
+			      <small>Bench Press Warmup Set 2 (1x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-bench2" value=0.5>
+			      </div>
+			      <small>Bench Press Warmup Set 3 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-bench3" value=0.7>
+			      </div>
+			      <small>Bench Press Warmup Set 4 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-bench4" value=0.9>
+			      </div>
+			    </label>
+
+			    <label id="text3" class="item">
+			      <small>Deadlift Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-dead1" value=0.4>
+			      </div>
+			      <small>Deadlift Warmup Set 2 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-dead2" value=0.6>
+			      </div>
+			      <small>Deadlift Warmup Set 3 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-dead3" value=0.85>
+			      </div>
+			    </label>
+
+			    <label id="text4" class="item">
+			      <small>Overhead Press Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-press1" value=0.0>
+			      </div>
+			      <small>Overhead Press Warmup Set 2 (1x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-press2" value=0.55>
+			      </div>
+			      <small>Overhead Press Warmup Set 3 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-press3" value=0.7>
+			      </div>
+			      <small>Overhead Press Warmup Set 4 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-press4" value=0.85>
+			      </div>
+			    </label>
+
+			    <label id="text5" class="item">
+			      <small>Pendlay Row Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-row1" value=0.0>
+			      </div>
+			      <small>Pendlay Row Warmup Set 2 (1x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-row2" value=0.5>
+			      </div>
+			      <small>Pendlay Row Warmup Set 3 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-row3" value=0.7>
+			      </div>
+			      <small>Pendlay Row Warmup Set 4 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-row4" value=0.9>
+			      </div>
+			    </label>
+
+			    <label id="text6" class="item">
+			      <small>Power Clean Warmup Set 1 (2x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-clean1" value=0.0>
+			      </div>
+			      <small>Power Clean Warmup Set 2 (1x5)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-clean2" value=0.55>
+			      </div>
+			      <small>Power Clean Warmup Set 3 (1x3)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-clean3" value=0.7>
+			      </div>
+			      <small>Power Clean Warmup Set 4 (1x2)</small>
+			      <div class="item-input-wrapper">
+			        <input type="number" min="0" max="1" step="0.05" class="item-input" id="input-clean4" value=0.85>
+			      </div>
+			    </label>
+		    </label>
+	    </div>
+	  </div>
+	</div>
+	<div class="item-container">
+		<div class="item-container-header">Reset to Defaults</div>
+			<div id='resetButton' class="item-container-content">
+					<input id='reset-Button' type='button' class='item-button' value='RESET'>
+			</div>
+	</div>	
+	<div class='item-container'>
+	<div class="item-container-header">Submit Configuration</div>
+		<div class='button-container'>
+			<input id='submitButton' type='button' class='item-button' value='SUBMIT'>
+		</div>
+	</div>
+
+	<div style="text-align: center; padding-top:20px" class='item-container'>
+        Enjoy my app and feel generous? I've put a lot of time and effert into making this app, please consider donating a small amount. All donations are greatly appreciated! Thank you for using Warmup Sets!
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>
+	<script>
+		document.getElementById('reset-Button').onclick = function() {
+			window.localStorage.clear();
+			location.reload();
+		}
+
+		window.onload = function() {
+			var defaultDisplay = "none";
+			document.getElementById('mult').style.display = defaultDisplay;
+		  	document.getElementById('text2').style.display = defaultDisplay;
+		  	document.getElementById('text3').style.display = defaultDisplay;
+		  	document.getElementById('text4').style.display = defaultDisplay;
+		  	document.getElementById('text5').style.display = defaultDisplay;
+		  	document.getElementById('text6').style.display = defaultDisplay;
+
+		}
+
+		document.getElementById('multbox').onchange = function() {
+			var display = this.checked == true ? "" : "none";
+			document.getElementById('mult').style.display = display;
+		}
+
+		document.getElementById('select-1').onchange = function() {
+
+			var display1 = this.selectedIndex == 0 ? "" : "none";
+			var display2 = this.selectedIndex == 1 ? "" : "none";
+			var display3 = this.selectedIndex == 2 ? "" : "none";
+			var display4 = this.selectedIndex == 3 ? "" : "none";
+			var display5 = this.selectedIndex == 4 ? "" : "none";
+			var display6 = this.selectedIndex == 5 ? "" : "none";
+			document.getElementById('text1').style.display = display1;
+			document.getElementById('text2').style.display = display2;
+			document.getElementById('text3').style.display = display3;
+			document.getElementById('text4').style.display = display4;
+			document.getElementById('text5').style.display = display5;
+			document.getElementById('text6').style.display = display6;
+		}
+	</script>
+	<script src='bower_components/Slate/dist/js/slate.min.js'></script>
+	<script src='js/main.js'></script>
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74424220-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>

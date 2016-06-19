@@ -1,0 +1,26 @@
+.title {
+	padding: 0 10px;
+	text-transform:	uppercase;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	color: #888888;
+	text-align: center;
+}
+
+#text1 .item-input-wrapper, #text2 .item-input-wrapper, #text3 .item-input-wrapper, #text4 .item-input-wrapper, #text5 .item-input-wrapper, #text6 .item-input-wrapper{
+	width:15%;
+}
+
+#text1 .item-input, #text2 .item-input, #text3 .item-input, #text4 .item-input, #text5 .item-input, #text6 .item-input {
+	text-align: center;
+}
+
+#resetButton {
+	text-align: center;
+}
+
+#reset-Button {
+	width:33%;
+	text-align: center;
+}

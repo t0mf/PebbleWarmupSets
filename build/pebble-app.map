@@ -1,0 +1,2010 @@
+Archive member included because of file (symbol)
+
+/Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                              src/main.c.28.o (app_event_loop)
+/usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+                              src/ftoa.c.28.o (__aeabi_dsub)
+/usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+                              src/ftoa.c.28.o (__aeabi_dmul)
+/usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+                              src/sets.c.28.o (__aeabi_dcmpeq)
+/usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+                              src/ftoa.c.28.o (__aeabi_d2iz)
+/usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+                              src/sets.c.28.o (floor)
+
+Allocating common symbols
+Common symbol       size              file
+
+hours_buff          0xa               src/timer.c.28.o
+exercise_int        0x4               src/main.c.28.o
+unit_type           0x4               src/main.c.28.o
+unit_system         0x4               src/main.c.28.o
+seconds_buff        0xa               src/timer.c.28.o
+timer_buff          0xa               src/timer.c.28.o
+s_sets_window       0x4               src/sets.c.28.o
+weight_buff         0xa               src/weight.c.28.o
+plates              0x1f9             src/sets.c.28.o
+bar_weight          0x8               src/main.c.28.o
+s_timer_window      0x4               src/sets.c.28.o
+s_weight_window     0x4               src/main.c.28.o
+sets_buff           0xf               src/sets.c.28.o
+ret                 0x4               src/sets.c.28.o
+minutes_buff        0xa               src/timer.c.28.o
+m_weight_d          0x8               src/main.c.28.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .init          0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .fini          0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .text          0x0000000000000000       0xc8 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .bss           0x0000000000000000       0x1c /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .jcr           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .tm_clone_table
+                0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .text          0x0000000000000000        0x0 src/ftoa.c.28.o
+ .bss           0x0000000000000000        0x0 src/ftoa.c.28.o
+ .text          0x0000000000000000        0x0 src/main.c.28.o
+ .bss           0x0000000000000000        0x0 src/main.c.28.o
+ .bss.bar_type  0x0000000000000000        0x4 src/main.c.28.o
+ .text          0x0000000000000000        0x0 src/mini-printf.c.28.o
+ .bss           0x0000000000000000        0x0 src/mini-printf.c.28.o
+ .text          0x0000000000000000        0x0 src/sets.c.28.o
+ .bss           0x0000000000000000        0x0 src/sets.c.28.o
+ .text          0x0000000000000000        0x0 src/timer.c.28.o
+ .bss           0x0000000000000000        0x0 src/timer.c.28.o
+ .text          0x0000000000000000        0x0 src/weight.c.28.o
+ .bss           0x0000000000000000        0x0 src/weight.c.28.o
+ .text          0x0000000000000000        0x0 aplite/appinfo.auto.c.28.o
+ .bss           0x0000000000000000        0x0 aplite/appinfo.auto.c.28.o
+ .text          0x0000000000000000        0x0 aplite/src/resource_ids.auto.c.28.o
+ .bss           0x0000000000000000        0x0 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_check_mark_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_up_arrow_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_minus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_plus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_play_reset_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_down_arrow_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_5_minus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_arrow_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_25_plus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_reset_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_5_plus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_25_minus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_pause_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_play_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_15_plus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .data.RESOURCE_ID_15_minus_button
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.28.o
+ .text          0x0000000000000000        0x0 src/message_keys.auto.c.28.o
+ .bss           0x0000000000000000        0x0 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_cleanTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_pressThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_pressOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_pressTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_cleanThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_squatFour
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_benchOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_cleanOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_deadThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_rowOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_squatThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_deadOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_benchFour
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_squatTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_benchTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_deadTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .data.MESSAGE_KEY_barWeight
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_pressFour
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_unitSystem
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_benchThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_rowThree
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_rowFour
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_squatOne
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_rowTwo
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss.MESSAGE_KEY_cleanFour
+                0x0000000000000000        0x4 src/message_keys.auto.c.28.o
+ .bss           0x0000000000000000        0x0 /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_data_service_subscribe__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_data_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_service_peek
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_service_set_samples_per_update
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_service_set_sampling_rate
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_tap_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_tap_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_add_to_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_clear_icon
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_remove_from_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_set_background_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_set_click_config_provider
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_set_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_legacy2_set_icon
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_get_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_is_scheduled
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_schedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_delay
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_handlers
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_implementation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_unschedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_unschedule_all
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_comm_get_sniff_interval
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_comm_set_sniff_interval
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_log  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_deregister_callbacks
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_sync_deinit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_sync_get
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_sync_init
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_sync_set
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_timer_cancel
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_timer_register
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_timer_reschedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.atan2_lookup
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.atoi     0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.atol     0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.battery_state_service_peek
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.battery_state_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.battery_state_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_set_alignment
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_set_background_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_set_bitmap
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bluetooth_connection_service_peek
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bluetooth_connection_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bluetooth_connection_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.click_number_of_clicks_counted
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.click_recognizer_get_button_id
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.clock_is_24h_style
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.cos_lookup
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.data_logging_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.data_logging_finish
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.data_logging_log
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_calc_buffer_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_calc_buffer_size_from_tuplets
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_merge
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_read_begin_from_buffer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_read_first
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_read_next
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_serialize_tuplets
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_serialize_tuplets_to_buffer__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_serialize_tuplets_to_buffer_with_iter
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_begin
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_cstring
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_end
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_int
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_int16
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_int32
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_int8
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_tuplet
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_uint16
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_uint32
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_write_uint8
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.fonts_load_custom_font
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.fonts_unload_custom_font
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.free     0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_as_sub_bitmap
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_with_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gmtime   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_draw_filled_legacy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_draw_outline
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_move_to
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_rotate_to
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpoint_equal
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_fill_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_stroke_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_text_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_bitmap_in_rect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_circle
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_line
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_pixel
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_rect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_round_rect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_fill_circle
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_fill_rect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_layout_get_max_used_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_align
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_center_point
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_clip
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_contains_point
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_crop
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_equal
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_is_empty
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_standardize
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gsize_equal
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.inverter_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.inverter_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.inverter_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_create_with_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_get_clips
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_get_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_get_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_get_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_insert_above_sibling
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_insert_below_sibling
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_mark_dirty
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_remove_child_layers
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_remove_from_parent
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_set_bounds
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_set_clips
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_set_frame
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_set_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_set_update_proc
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.light_enable
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.light_enable_interaction
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.localtime__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.malloc   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.memcpy   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.memmove  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_cell_basic_header_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_cell_title_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_index_compare
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_legacy2_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_get_scroll_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_reload_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_legacy2_set_callbacks__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_set_selected_next
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_get_value
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_set_label
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_set_max
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_set_min
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_set_step_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_set_value
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_delete
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_get_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_read_bool
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_read_data__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_read_string__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_write_bool
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_write_data__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_write_string
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_create_layer_frame
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_update_gpoint
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_update_grect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_legacy2_update_int16
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.psleep   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rand     0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.resource_get_handle
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.resource_load
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.resource_load_byte_range
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.resource_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_increment_angle
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_set_angle
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_set_corner_clip_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_set_src_ic
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_add_child
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_content_offset
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_content_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_shadow_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_scroll_down_click_handler
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_scroll_up_click_handler
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_callbacks
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_click_config_onto_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_content_offset
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_content_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_frame
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_shadow_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.sin_lookup
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.srand    0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.strftime
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.strncat  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.strncmp  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.strncpy  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_get_content_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_get_text
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_background_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_font
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_overflow_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_text
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_text_alignment
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_legacy2_set_text_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.tick_timer_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.time__deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.time_ms_deprecated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.vibes_cancel
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.vibes_double_pulse
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.vibes_long_pulse
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.vibes_short_pulse
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_get_click_config_provider
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_get_fullscreen
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_is_loaded
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_background_color_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_click_config_provider_with_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_fullscreen
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_status_bar_icon
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_stack_contains_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_stack_get_top_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_stack_pop_all
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_focus_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_focus_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_get_user_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_user_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_get_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_outbox_begin
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_outbox_send
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_register_inbox_dropped
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_register_outbox_failed
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_register_outbox_sent
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_message_set_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_multi_click_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_raw_click_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_click_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_text
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_serialize_tuplets_to_buffer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_read_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_read_string
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.persist_write_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dict_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_layout_get_content_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.simple_menu_layer_get_menu_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_data_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.calloc   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_get_bitmap
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_legacy2_set_callbacks
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_get_click_config_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.number_window_get_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.realloc  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_blank_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.click_recognizer_is_repeating
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.accel_raw_data_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_is_running
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_kill
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_launch
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_message_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_message_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_worker_send_message
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.worker_event_loop
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.worker_launch_app
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.heap_bytes_free
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.heap_bytes_used
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.compass_service_peek
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.compass_service_set_heading_filter
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.compass_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.compass_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.uuid_equal
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.uuid_to_string
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_draw_filled
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_legacy2_set_custom_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.watch_info_get_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.watch_info_get_firmware_version
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.watch_info_get_model
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_capture_frame_buffer_2bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_frame_buffer_is_captured
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_release_frame_buffer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.clock_to_timestamp
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.launch_reason
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_cancel
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_cancel_all
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_get_launch_event
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_query
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_schedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.wakeup_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.clock_is_timezone_set
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.i18n_get_system_locale
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text._localeconv_r
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.setlocale
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.mktime   0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gcolor_equal
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.__profiler_init
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.__profiler_print_stats
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.__profiler_start
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.__profiler_stop
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.bitmap_layer_set_background_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_fill_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_stroke_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_text_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.rot_bitmap_layer_set_corner_clip_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.window_set_background_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.clock_get_timezone
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.localtime
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_is_scheduled
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_schedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_custom_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_delay
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_handlers
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_implementation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_unschedule
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_unschedule_all
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_blank
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_capture_frame_buffer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_capture_frame_buffer_format
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_create_layer_frame
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_from
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_get_animation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_subject
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_to
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_update_gpoint
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_update_grect
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_update_int16
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_blank_with_palette
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_bounds
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_bytes_per_row
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_format
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_palette
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_set_bounds
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_set_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_set_palette
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_create_with_resource
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_get_bitmap_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_get_current_frame_idx
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_get_total_num_frames
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_update_bitmap_next_frame
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_from_png_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_clone
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_delay
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_elapsed
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_reverse
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_sequence_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_sequence_create_from_array
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_elapsed
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_set_reverse
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_spawn_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_spawn_create_from_array
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_custom_curve
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.animation_get_implementation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.launch_get_args
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_get_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_restart
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_set_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_antialiased
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_context_set_stroke_width
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_clear_icon
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_remove_from_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_set_click_config_provider
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_set_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_set_icon_animated
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_sequence_update_bitmap_by_elapsed
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_create_palettized_from_1bit
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_cell_layer_is_highlighted
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_rotated_bitmap
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_bar_layer_set_icon_press_animation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_get_content_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_get_text
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_set_background_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_set_overflow_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_set_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_set_text_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_frame_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_frame_get_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_frame_set_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_fill_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_num_points
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_path_open
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_point
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_radius
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_stroke_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_stroke_width
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_get_type
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_clone
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_create_with_resource
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_get_bounds_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_get_command_list
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_image_set_bounds_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_list_draw
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_list_get_command
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_list_get_num_commands
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_list_iterate
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_clone
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_create_with_resource
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_bounds_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_frame_by_elapsed
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_frame_by_index
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_num_frames
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_get_total_duration
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_set_bounds_size
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_sequence_set_play_count
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_fill_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_hidden
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_path_open
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_point
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_radius
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_stroke_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_set_stroke_width
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_create_bounds_origin
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_update_uint32
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpath_draw_outline_open
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.time     0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_set_highlight_colors
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_set_normal_colors
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_pad_bottom_enable
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_get_background_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_get_foreground_color
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_get_layer
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_set_colors
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.status_bar_layer_set_separator_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.difftime
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.time_ms  0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gcolor_legible_over
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.property_animation_update_gcolor8
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.app_focus_service_subscribe_handlers
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_close
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_freeze
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_get_context
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_get_root_level
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_hierarchy_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_item_get_action_data
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_item_get_label
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_level_add_action
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_level_add_child
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_level_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_level_set_display_mode
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_open
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_set_result_window
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.action_menu_unfreeze
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_enable_confirmation
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_start
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_stop
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_begin_write
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_end_write
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_get_attribute_id
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_get_service_id
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_attribute_read
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_service_is_available
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_set_timeout
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.smartstrap_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.connection_service_peek_pebble_app_connection
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.connection_service_peek_pebblekit_connection
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.connection_service_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.connection_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.dictation_session_enable_error_dialogs
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gbitmap_get_data_row_info
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.content_indicator_configure_direction
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.content_indicator_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.content_indicator_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.content_indicator_get_content_available
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.content_indicator_set_content_available
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_content_indicator
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_get_center_focused
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_set_center_focused
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gpoint_from_polar
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_draw_arc
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_fill_radial
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.grect_centered_from_polar
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_create
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_destroy
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_enable_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_enable_screen_text_flow
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_restore_default_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_attributes_restore_default_text_flow
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.graphics_text_layout_get_content_size_with_attributes
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_convert_point_to_screen
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.layer_convert_rect_to_screen
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_get_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.scroll_layer_set_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_enable_screen_text_flow_and_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.text_layer_restore_default_text_flow_and_paging
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.menu_layer_is_index_selected
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_activities_iterate
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_any_activity_accessible
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_events_subscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_events_unsubscribe
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_get_minute_history
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_metric_accessible
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_peek_current_activities
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_sum
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_sum_today
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.time_start_of_today
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_metric_averaged_accessible
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_sum_averaged
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.health_service_get_measurement_system_for_display
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text.gdraw_command_frame_get_command_list
+                0x0000000000000000        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .jcr           0x0000000000000000        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .tm_clone_table
+                0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .init          0x0000000000000000        0x8 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .fini          0x0000000000000000        0x8 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .text          0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .bss           0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+APP              0x0000000000000000 0x0000000000006000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+LOAD src/ftoa.c.28.o
+LOAD src/main.c.28.o
+LOAD src/mini-printf.c.28.o
+LOAD src/sets.c.28.o
+LOAD src/timer.c.28.o
+LOAD src/weight.c.28.o
+LOAD aplite/appinfo.auto.c.28.o
+LOAD aplite/src/resource_ids.auto.c.28.o
+LOAD src/message_keys.auto.c.28.o
+LOAD /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a
+START GROUP
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+LOAD /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+
+.header         0x0000000000000000       0x82
+ *(.pbl_header)
+ .pbl_header    0x0000000000000000       0x82 aplite/appinfo.auto.c.28.o
+                0x0000000000000000                __pbl_app_info
+
+.note.gnu.build-id
+                0x0000000000000082       0x26
+                0x0000000000000082                PROVIDE (BUILD_ID, .)
+ *(.note.gnu.build-id)
+ *fill*         0x0000000000000082        0x2 
+ .note.gnu.build-id
+                0x0000000000000084       0x24 linker stubs
+
+.text           0x00000000000000a8     0x3441
+ *(.text)
+ .text          0x00000000000000a8       0x14 /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .text          0x00000000000000bc      0x370 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+                0x00000000000000bc                __aeabi_drsub
+                0x00000000000000c4                __subdf3
+                0x00000000000000c4                __aeabi_dsub
+                0x00000000000000c8                __aeabi_dadd
+                0x00000000000000c8                __adddf3
+                0x0000000000000340                __aeabi_ui2d
+                0x0000000000000340                __floatunsidf
+                0x0000000000000360                __floatsidf
+                0x0000000000000360                __aeabi_i2d
+                0x0000000000000384                __extendsfdf2
+                0x0000000000000384                __aeabi_f2d
+                0x00000000000003c0                __aeabi_ul2d
+                0x00000000000003c0                __floatundidf
+                0x00000000000003d0                __aeabi_l2d
+                0x00000000000003d0                __floatdidf
+ .text          0x000000000000042c      0x424 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+                0x000000000000042c                __aeabi_dmul
+                0x000000000000042c                __muldf3
+                0x0000000000000680                __aeabi_ddiv
+                0x0000000000000680                __divdf3
+ .text          0x0000000000000850      0x110 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+                0x0000000000000850                __gtdf2
+                0x0000000000000850                __gedf2
+                0x0000000000000858                __ltdf2
+                0x0000000000000858                __ledf2
+                0x0000000000000860                __eqdf2
+                0x0000000000000860                __nedf2
+                0x0000000000000860                __cmpdf2
+                0x00000000000008dc                __aeabi_cdrcmple
+                0x00000000000008ec                __aeabi_cdcmple
+                0x00000000000008ec                __aeabi_cdcmpeq
+                0x00000000000008fc                __aeabi_dcmpeq
+                0x0000000000000910                __aeabi_dcmplt
+                0x0000000000000924                __aeabi_dcmple
+                0x0000000000000938                __aeabi_dcmpge
+                0x000000000000094c                __aeabi_dcmpgt
+ .text          0x0000000000000960       0x50 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+                0x0000000000000960                __fixdfsi
+                0x0000000000000960                __aeabi_d2iz
+ *(.text.*)
+ .text.ftoa     0x00000000000009b0      0x100 src/ftoa.c.28.o
+                0x00000000000009b0                ftoa
+ .text.select_click_handler
+                0x0000000000000ab0        0x2 src/main.c.28.o
+ .text.get_num_rows_callback
+                0x0000000000000ab2        0x4 src/main.c.28.o
+ .text.get_cell_height_callback
+                0x0000000000000ab6        0x4 src/main.c.28.o
+ *fill*         0x0000000000000aba        0x2 
+ .text.inbox_received_handler
+                0x0000000000000abc      0x500 src/main.c.28.o
+ .text.window_unload
+                0x0000000000000fbc       0x30 src/main.c.28.o
+ .text.window_appear
+                0x0000000000000fec       0x34 src/main.c.28.o
+ .text.window_load
+                0x0000000000001020      0x180 src/main.c.28.o
+ .text.select_click
+                0x00000000000011a0       0x30 src/main.c.28.o
+ .text.draw_row_callback
+                0x00000000000011d0       0x3c src/main.c.28.o
+ .text.click_config_provider
+                0x000000000000120c       0x10 src/main.c.28.o
+ .text.handle_second_tick
+                0x000000000000121c       0x2c src/main.c.28.o
+ .text.startup.main
+                0x0000000000001248      0x41c src/main.c.28.o
+                0x0000000000001248                main
+ .text._putc.4227
+                0x0000000000001664       0x26 src/mini-printf.c.28.o
+ .text._puts.4231
+                0x000000000000168a       0x34 src/mini-printf.c.28.o
+ .text.mini_itoa.part.0
+                0x00000000000016be       0x78 src/mini-printf.c.28.o
+ .text.mini_vsnprintf
+                0x0000000000001736       0xf8 src/mini-printf.c.28.o
+                0x0000000000001736                mini_vsnprintf
+ .text.mini_snprintf
+                0x000000000000182e       0x18 src/mini-printf.c.28.o
+                0x000000000000182e                mini_snprintf
+ .text.get_cell_height_callback
+                0x0000000000001846        0x4 src/sets.c.28.o
+ *fill*         0x000000000000184a        0x2 
+ .text.get_num_rows_callback
+                0x000000000000184c       0x38 src/sets.c.28.o
+ .text.sets_window_unload
+                0x0000000000001884       0x18 src/sets.c.28.o
+ .text.sets_window_appear
+                0x000000000000189c       0x34 src/sets.c.28.o
+ .text.sets_window_load
+                0x00000000000018d0      0x24c src/sets.c.28.o
+ .text.select_click
+                0x0000000000001b1c       0x24 src/sets.c.28.o
+ .text.draw_row_callback
+                0x0000000000001b40       0xd4 src/sets.c.28.o
+ .text.handle_second_tick
+                0x0000000000001c14       0x2c src/sets.c.28.o
+ .text.calculate_sets
+                0x0000000000001c40       0x40 src/sets.c.28.o
+                0x0000000000001c40                calculate_sets
+ .text.findWeight
+                0x0000000000001c80       0x90 src/sets.c.28.o
+                0x0000000000001c80                findWeight
+ .text.calculate_weights
+                0x0000000000001d10       0xac src/sets.c.28.o
+                0x0000000000001d10                calculate_weights
+ .text.concatPlates
+                0x0000000000001dbc       0x84 src/sets.c.28.o
+                0x0000000000001dbc                concatPlates
+ .text.calculate_barbell_math
+                0x0000000000001e40      0x278 src/sets.c.28.o
+                0x0000000000001e40                calculate_barbell_math
+ .text.do_stuff
+                0x00000000000020b8       0x20 src/sets.c.28.o
+                0x00000000000020b8                do_stuff
+ .text.init_sets_window
+                0x00000000000020d8       0x70 src/sets.c.28.o
+                0x00000000000020d8                init_sets_window
+ .text.timer_window_unload
+                0x0000000000002148       0x78 src/timer.c.28.o
+ .text.timer_window_appear
+                0x00000000000021c0       0x34 src/timer.c.28.o
+ .text.check_time
+                0x00000000000021f4      0x100 src/timer.c.28.o
+ .text.timer_window_load
+                0x00000000000022f4      0x12c src/timer.c.28.o
+ .text.timer_click_config_provider
+                0x0000000000002420       0x6c src/timer.c.28.o
+ .text.handle_second_tick
+                0x000000000000248c      0x188 src/timer.c.28.o
+ .text.stop_timer
+                0x0000000000002614       0xc8 src/timer.c.28.o
+                0x0000000000002614                stop_timer
+ .text.long_timer_select_click_handler
+                0x00000000000026dc       0x14 src/timer.c.28.o
+ .text.timer_back_click_handler
+                0x00000000000026f0       0x14 src/timer.c.28.o
+ .text.timer_up_click_handler
+                0x0000000000002704       0x38 src/timer.c.28.o
+ .text.timer_down_click_handler
+                0x000000000000273c       0x38 src/timer.c.28.o
+ .text.timer_select_click_handler
+                0x0000000000002774       0xe8 src/timer.c.28.o
+ .text.init_timer_window
+                0x000000000000285c      0x118 src/timer.c.28.o
+                0x000000000000285c                init_timer_window
+ .text.weight_window_unload
+                0x0000000000002974       0x58 src/weight.c.28.o
+ .text.weight_window_appear
+                0x00000000000029cc       0x34 src/weight.c.28.o
+ .text.weight_window_load
+                0x0000000000002a00      0x290 src/weight.c.28.o
+ .text.weight_down_click_handler
+                0x0000000000002c90       0xb4 src/weight.c.28.o
+ .text.weight_up_click_handler
+                0x0000000000002d44       0xb4 src/weight.c.28.o
+ .text.weight_click_config_provider
+                0x0000000000002df8       0x48 src/weight.c.28.o
+ .text.weight_select_click_handler
+                0x0000000000002e40       0x80 src/weight.c.28.o
+ .text.handle_second_tick
+                0x0000000000002ec0       0x2c src/weight.c.28.o
+ .text.init_weight_window
+                0x0000000000002eec      0x120 src/weight.c.28.o
+                0x0000000000002eec                init_weight_window
+ .text.app_event_loop
+                0x000000000000300c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000300c                app_event_loop
+ .text.app_message_open
+                0x0000000000003018        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003018                app_message_open
+ .text.clock_copy_time_string
+                0x0000000000003024        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003024                clock_copy_time_string
+ .text.dict_find
+                0x0000000000003030        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003030                dict_find
+ .text.fonts_get_system_font
+                0x000000000000303c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000303c                fonts_get_system_font
+ .text.gbitmap_create_with_resource
+                0x0000000000003048        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003048                gbitmap_create_with_resource
+ .text.gbitmap_destroy
+                0x0000000000003054        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003054                gbitmap_destroy
+ .text.layer_add_child
+                0x0000000000003060        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003060                layer_add_child
+ .text.layer_get_bounds
+                0x000000000000306c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000306c                layer_get_bounds
+ .text.layer_get_frame
+                0x0000000000003078        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003078                layer_get_frame
+ .text.memset   0x0000000000003084        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003084                memset
+ .text.menu_cell_basic_draw
+                0x0000000000003090        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003090                menu_cell_basic_draw
+ .text.menu_layer_destroy
+                0x000000000000309c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000309c                menu_layer_destroy
+ .text.menu_layer_get_layer
+                0x00000000000030a8        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030a8                menu_layer_get_layer
+ .text.menu_layer_set_click_config_onto_window
+                0x00000000000030b4        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030b4                menu_layer_set_click_config_onto_window
+ .text.persist_exists
+                0x00000000000030c0        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030c0                persist_exists
+ .text.persist_read_int
+                0x00000000000030cc        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030cc                persist_read_int
+ .text.persist_write_int
+                0x00000000000030d8        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030d8                persist_write_int
+ .text.snprintf
+                0x00000000000030e4        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030e4                snprintf
+ .text.strcat   0x00000000000030f0        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030f0                strcat
+ .text.strcmp   0x00000000000030fc        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000030fc                strcmp
+ .text.strcpy   0x0000000000003108        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003108                strcpy
+ .text.strlen   0x0000000000003114        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003114                strlen
+ .text.tick_timer_service_subscribe
+                0x0000000000003120        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003120                tick_timer_service_subscribe
+ .text.vibes_enqueue_custom_pattern
+                0x000000000000312c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000312c                vibes_enqueue_custom_pattern
+ .text.window_create
+                0x0000000000003138        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003138                window_create
+ .text.window_destroy
+                0x0000000000003144        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003144                window_destroy
+ .text.window_get_root_layer
+                0x0000000000003150        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003150                window_get_root_layer
+ .text.window_set_click_config_provider
+                0x000000000000315c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000315c                window_set_click_config_provider
+ .text.window_set_window_handlers
+                0x0000000000003168        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003168                window_set_window_handlers
+ .text.window_stack_pop
+                0x0000000000003174        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003174                window_stack_pop
+ .text.window_stack_push
+                0x0000000000003180        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003180                window_stack_push
+ .text.window_stack_remove
+                0x000000000000318c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000318c                window_stack_remove
+ .text.app_message_inbox_size_maximum
+                0x0000000000003198        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003198                app_message_inbox_size_maximum
+ .text.app_message_outbox_size_maximum
+                0x00000000000031a4        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031a4                app_message_outbox_size_maximum
+ .text.app_message_register_inbox_received
+                0x00000000000031b0        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031b0                app_message_register_inbox_received
+ .text.window_long_click_subscribe
+                0x00000000000031bc        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031bc                window_long_click_subscribe
+ .text.window_single_click_subscribe
+                0x00000000000031c8        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031c8                window_single_click_subscribe
+ .text.window_single_repeating_click_subscribe
+                0x00000000000031d4        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031d4                window_single_repeating_click_subscribe
+ .text.menu_layer_create
+                0x00000000000031e0        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031e0                menu_layer_create
+ .text.action_bar_layer_add_to_window
+                0x00000000000031ec        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031ec                action_bar_layer_add_to_window
+ .text.action_bar_layer_create
+                0x00000000000031f8        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x00000000000031f8                action_bar_layer_create
+ .text.action_bar_layer_destroy
+                0x0000000000003204        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003204                action_bar_layer_destroy
+ .text.action_bar_layer_set_background_color
+                0x0000000000003210        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003210                action_bar_layer_set_background_color
+ .text.action_bar_layer_set_icon
+                0x000000000000321c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000321c                action_bar_layer_set_icon
+ .text.text_layer_create
+                0x0000000000003228        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003228                text_layer_create
+ .text.text_layer_destroy
+                0x0000000000003234        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003234                text_layer_destroy
+ .text.text_layer_get_layer
+                0x0000000000003240        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003240                text_layer_get_layer
+ .text.text_layer_set_font
+                0x000000000000324c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000324c                text_layer_set_font
+ .text.text_layer_set_text
+                0x0000000000003258        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003258                text_layer_set_text
+ .text.text_layer_set_text_alignment
+                0x0000000000003264        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003264                text_layer_set_text_alignment
+ .text.menu_layer_set_callbacks
+                0x0000000000003270        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x0000000000003270                menu_layer_set_callbacks
+ .text.grect_inset
+                0x000000000000327c        0xc /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+                0x000000000000327c                grect_inset
+ .text.floor    0x0000000000003288      0x108 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+                0x0000000000003288                floor
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000003390        0x3 src/ftoa.c.28.o
+ .rodata.str1.1
+                0x0000000000003393       0x8e src/main.c.28.o
+                                         0x92 (size before relaxing)
+ .rodata.str1.1
+                0x0000000000003421       0x3f src/sets.c.28.o
+                                         0x68 (size before relaxing)
+ .rodata.str1.1
+                0x0000000000003460       0x34 src/timer.c.28.o
+                                         0x4a (size before relaxing)
+ .rodata.seg    0x0000000000003494        0xc src/timer.c.28.o
+                0x0000000000003494                seg
+ .rodata.str1.1
+                0x00000000000034a0       0x49 src/weight.c.28.o
+                                         0x7a (size before relaxing)
+
+.glue_7         0x00000000000034ec        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x00000000000034ec        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000000000034ec        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x00000000000034ec        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x00000000000034ec        0x0
+ .iplt          0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+
+.rel.dyn        0x00000000000034ec        0x0
+ .rel.iplt      0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .rel.got       0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+
+.data           0x00000000000034f0      0x281
+ *(.data)
+ .data          0x00000000000034f0        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .data          0x00000000000034f0        0x4 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x00000000000034f0                __dso_handle
+ .data          0x00000000000034f4        0x0 src/ftoa.c.28.o
+ .data          0x00000000000034f4        0x0 src/main.c.28.o
+ .data          0x00000000000034f4        0x0 src/mini-printf.c.28.o
+ .data          0x00000000000034f4        0x0 src/sets.c.28.o
+ .data          0x00000000000034f4        0x8 src/timer.c.28.o
+ .data          0x00000000000034fc        0x0 src/weight.c.28.o
+ .data          0x00000000000034fc        0x0 aplite/appinfo.auto.c.28.o
+ .data          0x00000000000034fc        0x0 aplite/src/resource_ids.auto.c.28.o
+ .data          0x00000000000034fc        0x0 src/message_keys.auto.c.28.o
+ .data          0x00000000000034fc        0x0 /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+ .data          0x00000000000034fc        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ *(.data.*)
+ .data.barbell_weights
+                0x00000000000034fc        0x8 src/main.c.28.o
+                0x00000000000034fc                barbell_weights
+ *fill*         0x0000000000003504        0x4 
+ .data.step_size
+                0x0000000000003508       0x10 src/main.c.28.o
+                0x0000000000003508                step_size
+ .data.rel.local.exercise_set_strings
+                0x0000000000003518       0x78 src/main.c.28.o
+                0x0000000000003518                exercise_set_strings
+ .data.plate_weights
+                0x0000000000003590       0x60 src/main.c.28.o
+                0x0000000000003590                plate_weights
+ .data.s_time_text
+                0x00000000000035f0        0x9 src/main.c.28.o
+ *fill*         0x00000000000035f9        0x7 
+ .data.exercise_multipliers
+                0x0000000000003600       0xf0 src/main.c.28.o
+                0x0000000000003600                exercise_multipliers
+ .data.rel.local.exercise_name_strings
+                0x00000000000036f0       0x18 src/main.c.28.o
+                0x00000000000036f0                exercise_name_strings
+ .data.rel.local.sets
+                0x0000000000003708       0x14 src/sets.c.28.o
+                0x0000000000003708                sets
+ *fill*         0x000000000000371c        0x4 
+ .data.weights  0x0000000000003720       0x28 src/sets.c.28.o
+                0x0000000000003720                weights
+ .data.s_time_text
+                0x0000000000003748        0x9 src/sets.c.28.o
+ *fill*         0x0000000000003751        0x3 
+ .data.minutes  0x0000000000003754        0x4 src/timer.c.28.o
+                0x0000000000003754                minutes
+ .data.timer_edit_state
+                0x0000000000003758        0x1 src/timer.c.28.o
+                0x0000000000003758                timer_edit_state
+ .data.timer_begin_state
+                0x0000000000003759        0x1 src/timer.c.28.o
+                0x0000000000003759                timer_begin_state
+ .data.s_time_text
+                0x000000000000375a        0x9 src/timer.c.28.o
+ *fill*         0x0000000000003763        0x1 
+ .data.seconds  0x0000000000003764        0x4 src/timer.c.28.o
+                0x0000000000003764                seconds
+ .data.s_time_text
+                0x0000000000003768        0x9 src/weight.c.28.o
+
+.igot.plt       0x0000000000003774        0x0
+ .igot.plt      0x0000000000000000        0x0 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+
+.got            0x0000000000003774       0x4c
+ .got           0x0000000000003774       0x4c /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+
+.got.plt        0x00000000000037c0        0xc
+ .got.plt       0x00000000000037c0        0xc /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                0x00000000000037c0                _GLOBAL_OFFSET_TABLE_
+
+.bss            0x00000000000037d0      0x332
+ *(.bss)
+ *(.bss.*)
+ .bss.s_time_layer
+                0x00000000000037d0        0x4 src/main.c.28.o
+ .bss.s_buff.7531
+                0x00000000000037d4       0x10 src/main.c.28.o
+ .bss.s_list_message_layer
+                0x00000000000037e4        0x4 src/main.c.28.o
+ .bss.s_menu_layer
+                0x00000000000037e8        0x4 src/main.c.28.o
+ .bss.s_main_window
+                0x00000000000037ec        0x4 src/main.c.28.o
+ .bss.head      0x00000000000037f0        0x4 src/sets.c.28.o
+                0x00000000000037f0                head
+ .bss.s_buff5.7967
+                0x00000000000037f4       0x14 src/sets.c.28.o
+ .bss.s_buff4.7981
+                0x0000000000003808       0x10 src/sets.c.28.o
+ .bss.s_time_layer
+                0x0000000000003818        0x4 src/sets.c.28.o
+ .bss.s_list_message_layer2
+                0x000000000000381c        0x4 src/sets.c.28.o
+ .bss.s_list_message_layer
+                0x0000000000003820        0x4 src/sets.c.28.o
+ .bss.s_buff4.7966
+                0x0000000000003824       0x14 src/sets.c.28.o
+ .bss.s_menu_layer
+                0x0000000000003838        0x4 src/sets.c.28.o
+ .bss.s_res_15_plus_button
+                0x000000000000383c        0x4 src/timer.c.28.o
+ .bss.s_text_layer
+                0x0000000000003840        0x4 src/timer.c.28.o
+ .bss.s_res_reset_button
+                0x0000000000003844        0x4 src/timer.c.28.o
+ .bss.timer_finished_state
+                0x0000000000003848        0x1 src/timer.c.28.o
+                0x0000000000003848                timer_finished_state
+ *fill*         0x0000000000003849        0x3 
+ .bss.s_time_layer
+                0x000000000000384c        0x4 src/timer.c.28.o
+ .bss.timer_running_state
+                0x0000000000003850        0x1 src/timer.c.28.o
+                0x0000000000003850                timer_running_state
+ *fill*         0x0000000000003851        0x3 
+ .bss.s_res_play_reset_button
+                0x0000000000003854        0x4 src/timer.c.28.o
+ .bss.hours     0x0000000000003858        0x4 src/timer.c.28.o
+                0x0000000000003858                hours
+ .bss.s_actionbarlayer_1
+                0x000000000000385c        0x4 src/timer.c.28.o
+ .bss.s_res_play_button
+                0x0000000000003860        0x4 src/timer.c.28.o
+ .bss.s_res_pause_button
+                0x0000000000003864        0x4 src/timer.c.28.o
+ .bss.s_res_15_minus_button
+                0x0000000000003868        0x4 src/timer.c.28.o
+ .bss.s_text_layer
+                0x000000000000386c        0x4 src/weight.c.28.o
+ .bss.s_time_layer
+                0x0000000000003870        0x4 src/weight.c.28.o
+ .bss.s_text_layer2
+                0x0000000000003874        0x4 src/weight.c.28.o
+ .bss.s_res_check_mark_button
+                0x0000000000003878        0x4 src/weight.c.28.o
+ .bss.temp      0x000000000000387c        0x4 src/weight.c.28.o
+                0x000000000000387c                temp
+ .bss.s_actionbarlayer_1
+                0x0000000000003880        0x4 src/weight.c.28.o
+ .bss.s_res_up_arrow_button
+                0x0000000000003884        0x4 src/weight.c.28.o
+ .bss.s_res_down_arrow_button
+                0x0000000000003888        0x4 src/weight.c.28.o
+ *fill*         0x000000000000388c        0x4 
+ COMMON         0x0000000000003890       0x28 src/main.c.28.o
+                0x0000000000003890                exercise_int
+                0x0000000000003894                unit_type
+                0x0000000000003898                unit_system
+                0x00000000000038a0                bar_weight
+                0x00000000000038a8                s_weight_window
+                0x00000000000038b0                m_weight_d
+ COMMON         0x00000000000038b8      0x218 src/sets.c.28.o
+                0x00000000000038b8                s_sets_window
+                0x00000000000038bc                plates
+                0x0000000000003ab8                s_timer_window
+                0x0000000000003abc                sets_buff
+                0x0000000000003acc                ret
+ COMMON         0x0000000000003ad0       0x28 src/timer.c.28.o
+                0x0000000000003ad0                hours_buff
+                0x0000000000003ada                seconds_buff
+                0x0000000000003ae4                timer_buff
+                0x0000000000003aee                minutes_buff
+ COMMON         0x0000000000003af8        0xa src/weight.c.28.o
+                0x0000000000003af8                weight_buff
+
+.ARM.attributes
+                0x0000000000000000       0x27
+ .ARM.attributes
+                0x0000000000000000       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crti.o
+ .ARM.attributes
+                0x0000000000000019       0x29 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+ .ARM.attributes
+                0x0000000000000042       0x33 src/ftoa.c.28.o
+ .ARM.attributes
+                0x0000000000000075       0x33 src/main.c.28.o
+ .ARM.attributes
+                0x00000000000000a8       0x33 src/mini-printf.c.28.o
+ .ARM.attributes
+                0x00000000000000db       0x33 src/sets.c.28.o
+ .ARM.attributes
+                0x000000000000010e       0x33 src/timer.c.28.o
+ .ARM.attributes
+                0x0000000000000141       0x33 src/weight.c.28.o
+ .ARM.attributes
+                0x0000000000000174       0x33 aplite/appinfo.auto.c.28.o
+ .ARM.attributes
+                0x00000000000001a7       0x33 aplite/src/resource_ids.auto.c.28.o
+ .ARM.attributes
+                0x00000000000001da       0x33 src/message_keys.auto.c.28.o
+ .ARM.attributes
+                0x000000000000020d       0x21 /Users/thomasfiveash/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp54NhKcpebble.o)
+ .ARM.attributes
+                0x000000000000022e       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000000000000247       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x0000000000000260       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000000000000279       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000000000000292       0x29 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+ .ARM.attributes
+                0x00000000000002bb       0x19 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtn.o
+
+.comment        0x0000000000000000       0x4e
+ .comment       0x0000000000000000       0x4e /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
+                                         0x4f (size before relaxing)
+ .comment       0x0000000000000000       0x4f src/ftoa.c.28.o
+ .comment       0x0000000000000000       0x4f src/main.c.28.o
+ .comment       0x0000000000000000       0x4f src/mini-printf.c.28.o
+ .comment       0x0000000000000000       0x4f src/sets.c.28.o
+ .comment       0x0000000000000000       0x4f src/timer.c.28.o
+ .comment       0x0000000000000000       0x4f src/weight.c.28.o
+ .comment       0x0000000000000000       0x4f aplite/appinfo.auto.c.28.o
+ .comment       0x0000000000000000       0x4f aplite/src/resource_ids.auto.c.28.o
+ .comment       0x0000000000000000       0x4f src/message_keys.auto.c.28.o
+ .comment       0x0000000000000000       0x4f /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtend.o
+
+DISCARD         0x0000000000000000      0x894
+ libc.a(*)
+ libm.a(*)
+ .debug_info    0x0000000000000000      0x1b6 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_abbrev  0x00000000000001b6       0xed /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_loc     0x00000000000002a3      0x211 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_aranges
+                0x00000000000004b4       0x20 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_ranges  0x00000000000004d4       0x10 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_line    0x00000000000004e4      0x1a8 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ .debug_str     0x000000000000068c      0x15c /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+                                        0x19c (size before relaxing)
+ .comment       0x00000000000007e8       0x4e /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+                                         0x4f (size before relaxing)
+ .ARM.attributes
+                0x0000000000000836       0x29 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ *fill*         0x000000000000085f        0x1 
+ .debug_frame   0x0000000000000860       0x34 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/../../../../arm-none-eabi/lib/thumb2/libm.a(lib_a-s_floor.o)
+ libgcc.a(*)
+ *(.eh_frame)
+OUTPUT(/Users/thomasfiveash/Desktop/PebbleWarmupSets/build/aplite/pebble-app.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000     0x6742
+ .debug_info    0x0000000000000000      0x171 src/ftoa.c.28.o
+ .debug_info    0x0000000000000171     0x1e82 src/main.c.28.o
+ .debug_info    0x0000000000001ff3      0x515 src/mini-printf.c.28.o
+ .debug_info    0x0000000000002508     0x15de src/sets.c.28.o
+ .debug_info    0x0000000000003ae6     0x1225 src/timer.c.28.o
+ .debug_info    0x0000000000004d0b     0x10ad src/weight.c.28.o
+ .debug_info    0x0000000000005db8      0x2e6 aplite/appinfo.auto.c.28.o
+ .debug_info    0x000000000000609e      0x18f aplite/src/resource_ids.auto.c.28.o
+ .debug_info    0x000000000000622d      0x231 src/message_keys.auto.c.28.o
+ .debug_info    0x000000000000645e       0xb9 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000000000006517       0xb9 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00000000000065d0       0xb9 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x0000000000006689       0xb9 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+
+.debug_abbrev   0x0000000000000000     0x11e9
+ .debug_abbrev  0x0000000000000000       0xf3 src/ftoa.c.28.o
+ .debug_abbrev  0x00000000000000f3      0x36f src/main.c.28.o
+ .debug_abbrev  0x0000000000000462      0x234 src/mini-printf.c.28.o
+ .debug_abbrev  0x0000000000000696      0x3d8 src/sets.c.28.o
+ .debug_abbrev  0x0000000000000a6e      0x2f2 src/timer.c.28.o
+ .debug_abbrev  0x0000000000000d60      0x329 src/weight.c.28.o
+ .debug_abbrev  0x0000000000001089       0x88 aplite/appinfo.auto.c.28.o
+ .debug_abbrev  0x0000000000001111       0x44 aplite/src/resource_ids.auto.c.28.o
+ .debug_abbrev  0x0000000000001155       0x44 src/message_keys.auto.c.28.o
+ .debug_abbrev  0x0000000000001199       0x14 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00000000000011ad       0x14 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00000000000011c1       0x14 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x00000000000011d5       0x14 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+
+.debug_loc      0x0000000000000000     0x1c46
+ .debug_loc     0x0000000000000000       0xe8 src/ftoa.c.28.o
+ .debug_loc     0x00000000000000e8      0x6c5 src/main.c.28.o
+ .debug_loc     0x00000000000007ad      0x5e8 src/mini-printf.c.28.o
+ .debug_loc     0x0000000000000d95      0x716 src/sets.c.28.o
+ .debug_loc     0x00000000000014ab      0x43e src/timer.c.28.o
+ .debug_loc     0x00000000000018e9      0x35d src/weight.c.28.o
+
+.debug_aranges  0x0000000000000000      0x310
+ .debug_aranges
+                0x0000000000000000       0x20 src/ftoa.c.28.o
+ .debug_aranges
+                0x0000000000000020       0x78 src/main.c.28.o
+ .debug_aranges
+                0x0000000000000098       0x40 src/mini-printf.c.28.o
+ .debug_aranges
+                0x00000000000000d8       0x90 src/sets.c.28.o
+ .debug_aranges
+                0x0000000000000168       0x80 src/timer.c.28.o
+ .debug_aranges
+                0x00000000000001e8       0x60 src/weight.c.28.o
+ .debug_aranges
+                0x0000000000000248       0x18 aplite/appinfo.auto.c.28.o
+ .debug_aranges
+                0x0000000000000260       0x18 aplite/src/resource_ids.auto.c.28.o
+ .debug_aranges
+                0x0000000000000278       0x18 src/message_keys.auto.c.28.o
+ .debug_aranges
+                0x0000000000000290       0x20 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x00000000000002b0       0x20 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x00000000000002d0       0x20 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000000000002f0       0x20 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+
+.debug_ranges   0x0000000000000000      0x328
+ .debug_ranges  0x0000000000000000       0x10 src/ftoa.c.28.o
+ .debug_ranges  0x0000000000000010       0x98 src/main.c.28.o
+ .debug_ranges  0x00000000000000a8       0x60 src/mini-printf.c.28.o
+ .debug_ranges  0x0000000000000108      0x100 src/sets.c.28.o
+ .debug_ranges  0x0000000000000208       0xa0 src/timer.c.28.o
+ .debug_ranges  0x00000000000002a8       0x80 src/weight.c.28.o
+
+.debug_line     0x0000000000000000     0x195f
+ .debug_line    0x0000000000000000      0x15a src/ftoa.c.28.o
+ .debug_line    0x000000000000015a      0x3a9 src/main.c.28.o
+ .debug_line    0x0000000000000503      0x18b src/mini-printf.c.28.o
+ .debug_line    0x000000000000068e      0x3ed src/sets.c.28.o
+ .debug_line    0x0000000000000a7b      0x3ba src/timer.c.28.o
+ .debug_line    0x0000000000000e35      0x2ab src/weight.c.28.o
+ .debug_line    0x00000000000010e0      0x13c aplite/appinfo.auto.c.28.o
+ .debug_line    0x000000000000121c       0xc4 aplite/src/resource_ids.auto.c.28.o
+ .debug_line    0x00000000000012e0       0xbd src/message_keys.auto.c.28.o
+ .debug_line    0x000000000000139d      0x20a /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x00000000000015a7      0x226 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x00000000000017cd      0x10c /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x00000000000018d9       0x86 /usr/local/Cellar/pebble-toolchain/2.0/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_arm_fixdfsi.o)
+
+.debug_str      0x0000000000000000     0x1a46
+ .debug_str     0x0000000000000000       0xc3 src/ftoa.c.28.o
+                                        0x113 (size before relaxing)
+ .debug_str     0x00000000000000c3      0xcc4 src/main.c.28.o
+                                        0xe7e (size before relaxing)
+ .debug_str     0x0000000000000d87       0xb3 src/mini-printf.c.28.o
+                                        0x19a (size before relaxing)
+ .debug_str     0x0000000000000e3a      0x1a7 src/sets.c.28.o
+                                        0xa6b (size before relaxing)
+ .debug_str     0x0000000000000fe1      0x39a src/timer.c.28.o
+                                        0x8b9 (size before relaxing)
+ .debug_str     0x000000000000137b      0x16d src/weight.c.28.o
+                                        0x835 (size before relaxing)
+ .debug_str     0x00000000000014e8      0x164 aplite/appinfo.auto.c.28.o
+                                        0x257 (size before relaxing)
+ .debug_str     0x000000000000164c      0x1cc aplite/src/resource_ids.auto.c.28.o
+                                        0x299 (size before relaxing)
+ .debug_str     0x0000000000001818      0x22e src/message_keys.auto.c.28.o
+                                        0x2fb (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x674
+ .debug_frame   0x0000000000000000       0x34 src/ftoa.c.28.o
+ .debug_frame   0x0000000000000034      0x148 src/main.c.28.o
+ .debug_frame   0x000000000000017c       0xac src/mini-printf.c.28.o
+ .debug_frame   0x0000000000000228      0x1bc src/sets.c.28.o
+ .debug_frame   0x00000000000003e4      0x174 src/timer.c.28.o
+ .debug_frame   0x0000000000000558      0x11c src/weight.c.28.o

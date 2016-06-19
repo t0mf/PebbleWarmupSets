@@ -1,7 +1,32 @@
 #include "main.h"
 #include "weight.h"
 #include "master.h"
-#include "settings.h"
+
+#define KEY_UNIT_TYPE 1000
+#define KEY_BAR_WEIGHT 2000
+#define KEY_SQUAT_1 3000
+#define KEY_SQUAT_2 4000
+#define KEY_SQUAT_3 5000
+#define KEY_SQUAT_4 6000
+#define KEY_BENCH_1 7000
+#define KEY_BENCH_2 8000
+#define KEY_BENCH_3 9000
+#define KEY_BENCH_4 10000
+#define KEY_DEAD_1 11000
+#define KEY_DEAD_2 12000
+#define KEY_DEAD_3 13000
+#define KEY_PRESS_1 14000
+#define KEY_PRESS_2 15000
+#define KEY_PRESS_3 16000
+#define KEY_PRESS_4 17000
+#define KEY_ROW_1 18000
+#define KEY_ROW_2 19000
+#define KEY_ROW_3 20000
+#define KEY_ROW_4 21000
+#define KEY_CLEAN_1 22000
+#define KEY_CLEAN_2 23000
+#define KEY_CLEAN_3 24000
+#define KEY_CLEAN_4 25000
 
 static Window *s_main_window;
 static MenuLayer *s_menu_layer;
@@ -34,9 +59,127 @@ double plate_weights[6][2] = { {45,20.00}, {35,15.00}, {25,10.00}, {10,5.00}, {5
 double step_size[2] = {5, 2.5};
 // Initialize barbell weights for imperial and metric
 int bar_type = 0; //0 for 45, 1 for 35, 2 for 25
-int barbell_weights[3][2] = { {45,20}, {35,15}, {25, 10} };
+int barbell_weights[2] = { 45,20 };
 
 static char s_time_text[] = "00:00   ";
+
+static void inbox_received_handler(DictionaryIterator *iter, void *context) {
+  Tuple *unit_system_t = dict_find(iter, KEY_UNIT_TYPE);
+
+  if (unit_system_t) {
+    unit_system = unit_system_t->value->int8;
+    persist_write_int(0, unit_system);
+
+    if (unit_system == 0) { unit_type = " lbs"; } 
+    else if (unit_system == 1) { unit_type = " kgs"; }
+  }
+
+  Tuple *bar_weight_t = dict_find(iter, KEY_BAR_WEIGHT);
+
+  if (bar_weight_t) {
+    barbell_weights[unit_system] = bar_weight_t->value->int8;
+    persist_write_int(1, bar_weight_t->value->int8);
+    m_weight_d = bar_weight = barbell_weights[unit_system];
+  }
+
+  Tuple *squat_1_t = dict_find(iter, KEY_SQUAT_1);
+  Tuple *squat_2_t = dict_find(iter, KEY_SQUAT_2);
+  Tuple *squat_3_t = dict_find(iter, KEY_SQUAT_3);
+  Tuple *squat_4_t = dict_find(iter, KEY_SQUAT_4);
+
+  if (squat_1_t) {
+    exercise_multipliers[0][0] = (squat_1_t->value->int16)/1000.0;
+    exercise_multipliers[0][1] = (squat_2_t->value->int16)/1000.0;
+    exercise_multipliers[0][2] = (squat_3_t->value->int16)/1000.0;
+    exercise_multipliers[0][3] = (squat_4_t->value->int16)/1000.0;
+    persist_write_int(KEY_SQUAT_1, squat_1_t->value->int16);
+    persist_write_int(KEY_SQUAT_2, squat_2_t->value->int16);
+    persist_write_int(KEY_SQUAT_3, squat_3_t->value->int16);
+    persist_write_int(KEY_SQUAT_4, squat_4_t->value->int16);
+  }
+
+  Tuple *bench_1_t = dict_find(iter, KEY_BENCH_1);
+  Tuple *bench_2_t = dict_find(iter, KEY_BENCH_2);
+  Tuple *bench_3_t = dict_find(iter, KEY_BENCH_3);
+  Tuple *bench_4_t = dict_find(iter, KEY_BENCH_4);
+
+  if (bench_1_t) {
+    exercise_multipliers[1][0] = (bench_1_t->value->int16)/1000.0;
+    exercise_multipliers[1][1] = (bench_2_t->value->int16)/1000.0;
+    exercise_multipliers[1][2] = (bench_3_t->value->int16)/1000.0;
+    exercise_multipliers[1][3] = (bench_4_t->value->int16)/1000.0;
+    persist_write_int(KEY_BENCH_1, bench_1_t->value->int16);
+    persist_write_int(KEY_BENCH_2, bench_2_t->value->int16);
+    persist_write_int(KEY_BENCH_3, bench_3_t->value->int16);
+    persist_write_int(KEY_BENCH_4, bench_4_t->value->int16);
+
+  }
+
+  Tuple *dead_1_t = dict_find(iter, KEY_DEAD_1);
+  Tuple *dead_2_t = dict_find(iter, KEY_DEAD_2);
+  Tuple *dead_3_t = dict_find(iter, KEY_DEAD_3);
+
+  if (dead_1_t) {
+    exercise_multipliers[2][0] = (dead_1_t->value->int16)/1000.0;
+    exercise_multipliers[2][1] = (dead_2_t->value->int16)/1000.0;
+    exercise_multipliers[2][2] = (dead_3_t->value->int16)/1000.0;
+    persist_write_int(KEY_DEAD_1, dead_1_t->value->int16);
+    persist_write_int(KEY_DEAD_2, dead_2_t->value->int16);
+    persist_write_int(KEY_DEAD_3, dead_3_t->value->int16);
+
+  }
+
+  Tuple *press_1_t = dict_find(iter, KEY_PRESS_1);
+  Tuple *press_2_t = dict_find(iter, KEY_PRESS_2);
+  Tuple *press_3_t = dict_find(iter, KEY_PRESS_3);
+  Tuple *press_4_t = dict_find(iter, KEY_PRESS_4);
+
+  if (press_1_t) {
+    exercise_multipliers[3][0] = (press_1_t->value->int16)/1000.0;
+    exercise_multipliers[3][1] = (press_2_t->value->int16)/1000.0;
+    exercise_multipliers[3][2] = (press_3_t->value->int16)/1000.0;
+    exercise_multipliers[3][3] = (press_4_t->value->int16)/1000.0;
+    persist_write_int(KEY_PRESS_1, press_1_t->value->int16);
+    persist_write_int(KEY_PRESS_2, press_2_t->value->int16);
+    persist_write_int(KEY_PRESS_3, press_3_t->value->int16);
+    persist_write_int(KEY_PRESS_4, press_4_t->value->int16);
+
+  }
+
+  Tuple *row_1_t = dict_find(iter, KEY_ROW_1);
+  Tuple *row_2_t = dict_find(iter, KEY_ROW_2);
+  Tuple *row_3_t = dict_find(iter, KEY_ROW_3);
+  Tuple *row_4_t = dict_find(iter, KEY_ROW_4);
+
+  if (row_1_t) {
+    exercise_multipliers[4][0] = (row_1_t->value->int16)/1000.0;
+    exercise_multipliers[4][1] = (row_2_t->value->int16)/1000.0;
+    exercise_multipliers[4][2] = (row_3_t->value->int16)/1000.0;
+    exercise_multipliers[4][3] = (row_4_t->value->int16)/1000.0;
+    persist_write_int(KEY_ROW_1, row_1_t->value->int16);
+    persist_write_int(KEY_ROW_2, row_2_t->value->int16);
+    persist_write_int(KEY_ROW_3, row_3_t->value->int16);
+    persist_write_int(KEY_ROW_4, row_4_t->value->int16);
+
+  }
+
+  Tuple *clean_1_t = dict_find(iter, KEY_CLEAN_1);
+  Tuple *clean_2_t = dict_find(iter, KEY_CLEAN_2);
+  Tuple *clean_3_t = dict_find(iter, KEY_CLEAN_3);
+  Tuple *clean_4_t = dict_find(iter, KEY_CLEAN_4);
+
+  if (clean_1_t) {
+    exercise_multipliers[5][0] = (clean_1_t->value->int16)/1000.0;
+    exercise_multipliers[5][1] = (clean_2_t->value->int16)/1000.0;
+    exercise_multipliers[5][2] = (clean_3_t->value->int16)/1000.0;
+    exercise_multipliers[5][3] = (clean_4_t->value->int16)/1000.0;
+    persist_write_int(KEY_CLEAN_1, clean_1_t->value->int16);
+    persist_write_int(KEY_CLEAN_2, clean_2_t->value->int16);
+    persist_write_int(KEY_CLEAN_3, clean_3_t->value->int16);
+    persist_write_int(KEY_CLEAN_4, clean_4_t->value->int16);
+
+  }
+}
 
 // Method handles changing the clock every minute
 static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
@@ -47,14 +190,9 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 }
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
-  if (cell_index->row == 6) { // If Settings selected go to settings window
-    init_settings_window();
-    window_stack_push(s_settings_window, true);
-  } else { // Otherwise set exercise_int to row and go to the weight window
-    exercise_int = cell_index->row;  
+  exercise_int = cell_index->row;  
     init_weight_window();
     window_stack_push(s_weight_window, true);
-  }
 }
 
 static void select_click_handler(ClickRecognizerRef recognize, void *context) {
@@ -66,17 +204,14 @@ static void click_config_provider(void *context) {
 }
 
 static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
-  return 7;
+  return 6;
 }
 
 static void draw_row_callback(GContext *ctx, const Layer *cell_layer, MenuIndex *cell_index, void *context) {
   // Draw the rows
   static char s_buff[16];
-  if (cell_index->row == 6) { menu_cell_basic_draw(ctx, cell_layer, "Settings", NULL, NULL); }
-  else {
-    snprintf(s_buff, sizeof(s_buff), "%s", exercise_name_strings[cell_index->row]);
-    menu_cell_basic_draw(ctx, cell_layer, s_buff, NULL, NULL);
-  }
+  snprintf(s_buff, sizeof(s_buff), "%s", exercise_name_strings[cell_index->row]);
+  menu_cell_basic_draw(ctx, cell_layer, s_buff, NULL, NULL);
 }
 
 static int16_t get_cell_height_callback(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *context) {
@@ -141,6 +276,9 @@ static void init(void) {
   }
   
   window_stack_push(s_main_window, true);  
+
+  app_message_register_inbox_received(inbox_received_handler);
+  app_message_open(app_message_inbox_size_maximum(), app_message_outbox_size_maximum());
 }
 
 static void deinit(void){
@@ -154,15 +292,60 @@ int main() {
   } else {
     unit_system = 0;
   }
-  // Initialize bar type
+
   if (persist_exists(1)) {
-    bar_type = persist_read_int(1);
+    m_weight_d = bar_weight = barbell_weights[unit_system] = persist_read_int(1);
   } else {
-    bar_type = 0;
+    if (unit_system == 0) {
+      m_weight_d = bar_weight = barbell_weights[unit_system] = 45;
+    } else if (unit_system == 1) {
+      m_weight_d = bar_weight = barbell_weights[unit_system] = 20;
+    }
   }
   
+  if (persist_exists(KEY_SQUAT_1)) {
+    exercise_multipliers[0][0] = persist_read_int(KEY_SQUAT_1)/1000.0;
+    exercise_multipliers[0][1] = persist_read_int(KEY_SQUAT_2)/1000.0;
+    exercise_multipliers[0][2] = persist_read_int(KEY_SQUAT_3)/1000.0;
+    exercise_multipliers[0][3] = persist_read_int(KEY_SQUAT_4)/1000.0;
+  }
+
+  if (persist_exists(KEY_BENCH_1)) {
+    exercise_multipliers[1][0] = persist_read_int(KEY_BENCH_1)/1000.0;
+    exercise_multipliers[1][1] = persist_read_int(KEY_BENCH_2)/1000.0;
+    exercise_multipliers[1][2] = persist_read_int(KEY_BENCH_3)/1000.0;
+    exercise_multipliers[1][3] = persist_read_int(KEY_BENCH_4)/1000.0;
+  }
+
+  if (persist_exists(KEY_DEAD_1)) {
+    exercise_multipliers[2][0] = persist_read_int(KEY_DEAD_1)/1000.0;
+    exercise_multipliers[2][1] = persist_read_int(KEY_DEAD_2)/1000.0;
+    exercise_multipliers[2][2] = persist_read_int(KEY_DEAD_3)/1000.0;
+  }
+
+  if (persist_exists(KEY_PRESS_1)) {
+    exercise_multipliers[3][0] = persist_read_int(KEY_PRESS_1)/1000.0;
+    exercise_multipliers[3][1] = persist_read_int(KEY_PRESS_2)/1000.0;
+    exercise_multipliers[3][2] = persist_read_int(KEY_PRESS_3)/1000.0;
+    exercise_multipliers[3][3] = persist_read_int(KEY_PRESS_4)/1000.0;
+  }
+
+  if (persist_exists(KEY_ROW_1)) {
+    exercise_multipliers[4][0] = persist_read_int(KEY_ROW_1)/1000.0;
+    exercise_multipliers[4][1] = persist_read_int(KEY_ROW_2)/1000.0;
+    exercise_multipliers[4][2] = persist_read_int(KEY_ROW_3)/1000.0;
+    exercise_multipliers[4][3] = persist_read_int(KEY_ROW_4)/1000.0;
+  }
+
+  if (persist_exists(KEY_CLEAN_1)) {
+    exercise_multipliers[5][0] = persist_read_int(KEY_CLEAN_1)/1000.0;
+    exercise_multipliers[5][1] = persist_read_int(KEY_CLEAN_2)/1000.0;
+    exercise_multipliers[5][2] = persist_read_int(KEY_CLEAN_3)/1000.0;
+    exercise_multipliers[5][3] = persist_read_int(KEY_CLEAN_4)/1000.0;
+  }
+
   // Initialize barbell weight
-   m_weight_d = bar_weight = barbell_weights[bar_type][unit_system]; 
+   m_weight_d = bar_weight = barbell_weights[unit_system]; 
   
   // Initialize kg or lbs
   if (unit_system == 0) { unit_type = " lbs"; } 

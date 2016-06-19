@@ -152,16 +152,16 @@ void calculate_weights(void) {
 double findWeight(double num) {
   int tmp = num;
   if (unit_system == 0) {
-    if ((tmp - (tmp % 5)) < barbell_weights[bar_type][unit_system])
-      return barbell_weights[bar_type][unit_system];
+    if ((tmp - (tmp % 5)) < barbell_weights[unit_system])
+      return barbell_weights[unit_system];
     else
     return (tmp - (tmp % 5));
   } else if (unit_system == 1) {
       num /= 2.5;
       num = floor(num);
       num *= 2.5;
-      if (num < barbell_weights[bar_type][unit_system])
-        return barbell_weights[bar_type][unit_system];
+      if (num < barbell_weights[unit_system])
+        return barbell_weights[unit_system];
       return num;
   }
   return -1;
@@ -169,7 +169,7 @@ double findWeight(double num) {
 
 void calculate_barbell_math(double weight, int i) {
 
-  double bar_weight = barbell_weights[bar_type][unit_system];
+  double bar_weight = barbell_weights[unit_system];
   
   weight -= bar_weight;
   

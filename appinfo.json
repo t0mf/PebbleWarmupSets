@@ -1,7 +1,34 @@
 {
-    "appKeys": {},
+    "appKeys": {
+        "unitSystem": 1000,
+        "barWeight": 2000,
+        "squatOne": 3000,
+        "squatTwo": 4000,
+        "squatThree": 5000,
+        "squatFour": 6000,
+        "benchOne": 7000,
+        "benchTwo": 8000,
+        "benchThree": 9000,
+        "benchFour": 10000,
+        "deadOne": 11000,
+        "deadTwo": 12000,
+        "deadThree": 13000,
+        "pressOne": 14000,
+        "pressTwo": 15000,
+        "pressThree": 16000,
+        "pressFour": 17000,
+        "rowOne": 18000,
+        "rowTwo": 19000,
+        "rowThree": 20000,
+        "rowFour": 21000,
+        "cleanOne": 22000,
+        "cleanTwo": 23000,
+        "cleanThree": 24000,
+        "cleanFour": 25000
+        
+        },
     "capabilities": [
-        ""
+        "configurable"
     ],
     "companyName": "thomasfiveash",
     "enableMultiJS": true,
@@ -115,7 +142,7 @@
         "chalk"
     ],
     "uuid": "652a77c0-44a0-4eeb-846b-3bb95008a646",
-    "versionLabel": "1.0",
+    "versionLabel": "2.0",
     "watchapp": {
         "watchface": false
     }
