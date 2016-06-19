@@ -192,7 +192,7 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
   exercise_int = cell_index->row;  
     init_weight_window();
-    window_stack_push(s_weight_window, true);
+    window_stack_push(s_weight_window, false);
 }
 
 static void select_click_handler(ClickRecognizerRef recognize, void *context) {
@@ -275,7 +275,7 @@ static void init(void) {
     });
   }
   
-  window_stack_push(s_main_window, true);  
+  window_stack_push(s_main_window, false);  
 
   app_message_register_inbox_received(inbox_received_handler);
   app_message_open(app_message_inbox_size_maximum(), app_message_outbox_size_maximum());

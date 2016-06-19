@@ -30,7 +30,7 @@ static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
 
 static void select_click(struct MenuLayer *menu_layer, MenuIndex *cell_index, void *callback_context) {
   init_timer_window();
-  window_stack_push(s_timer_window, true);
+  window_stack_push(s_timer_window, false);
 }
 
 static uint16_t get_num_rows_callback(MenuLayer *menu_layer, uint16_t section_index, void *context) {
@@ -122,7 +122,7 @@ void init_sets_window(void) {
   calculate_sets();
   calculate_weights();
   do_stuff();
-  window_stack_push(s_sets_window, true);  
+  window_stack_push(s_sets_window, false);  
 }
 
 void do_stuff(void) {

@@ -33,7 +33,7 @@ static void weight_select_click_handler(ClickRecognizerRef recognize, void *cont
   text_layer_set_text(s_text_layer2, weight_buff);
   persist_write_int(((exercise_int + 3)+(unit_system*7)), m_weight_d*10);
   init_sets_window();
-  window_stack_push(s_sets_window, true);
+  window_stack_push(s_sets_window, false);
 }
 
 static void weight_up_click_handler(ClickRecognizerRef recognize, void *context) {
