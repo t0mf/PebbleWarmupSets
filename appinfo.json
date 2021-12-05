@@ -25,7 +25,7 @@
         "cleanTwo": 23000,
         "cleanThree": 24000,
         "cleanFour": 25000
-        
+
         },
     "capabilities": [
         "configurable"
@@ -142,7 +142,7 @@
         "chalk"
     ],
     "uuid": "652a77c0-44a0-4eeb-846b-3bb95008a646",
-    "versionLabel": "2.0",
+    "versionLabel": "2.1",
     "watchapp": {
         "watchface": false
     }
